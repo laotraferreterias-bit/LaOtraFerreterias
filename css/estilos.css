@@ -525,3 +525,38 @@ footer h2{
     min-width:0;
 
 }
+.cantidadInput{
+
+    width:60px;
+
+    text-align:center;
+
+    padding:5px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+}
+
+.btnEliminar{
+
+    background:#54baff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    padding:5px 10px;
+
+    cursor:pointer;
+
+}
+
+.btnEliminar:hover{
+
+    background:#35d0ff;
+
+}
