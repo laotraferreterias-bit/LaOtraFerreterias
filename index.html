@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>La Otra Ferreterías</title>
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="imagenes/logo.png"
+         class="logo">
+
+    <div>
+
+        <h1>La Otra Ferreterías</h1>
+
+        <p>Catálogo Digital</p>
+
+    </div>
+
+</header>
+
+<section class="busqueda">
+
+    <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar producto..."
+    >
+    <select id="filtroCategoria">
+
+        <option value="">
+            TODOS LOS PRODUCTOS
+        </option>
+
+    </select>
+
+</section>
+
+<main>
+
+<button id="abrirCarrito">
+
+    🛒 <span id="contadorMovil">0</span>
+
+</button>
+
+    <div class="catalogo">
+
+        <section id="productos"></section>
+
+        <div id="paginacion"></div>
+
+    </div>
+
+    <aside id="carrito">
+
+    <div class="carritoHeader">
+
+        <h2>Cotización</h2>
+
+        <button id="cerrarCarrito">
+            ✕
+        </button>
+
+    </div>
+
+    <div id="listaCarrito"></div>
+
+    <div class="totales">
+
+        <span id="cantidadArticulos">
+            0 artículos
+        </span>
+
+    </div>
+
+    <button id="btnWhats">
+        Solicitar Cotización
+    </button>
+
+</aside>
+
+</main>
+
+<script src="js/app.js"></script>
+
+<footer>
+
+    <h2>Nuestras Sucursales</h2>
+
+    <div class="sucursales">
+
+        <div class="sucursal">
+
+            <h3>Matriz</h3>
+
+            <p>Calle 28 x 401, col. Centro. </p>
+
+            <p>Tenosique, Tabasco</p>
+
+            <p>Tel: 934-342-1310</p>
+        </div>
+        <div class="sucursal">
+
+            <h3>Sucursal 1</h3>
+
+            <p>Calle 28 x 45. </p>
+
+            <p>Tenosique, Tabasco</p>
+
+            <p>Tel: 934-112-8504</p>
+        </div>
+        <div class="sucursal">
+
+            <h3>Sucursal 2</h3>
+
+            <p>Calle 55 s/n x 20. </p>
+
+            <p>Tenosique, Tabasco</p>
+        </div>
+        <div class="sucursal">
+
+            <h3>Sucursal 3</h3>
+
+            <p>Calle Dr. Manuel Velasco s/n frente a la clínica de Palenque.</p>
+
+            <p>Palenque, Chiapas</p>
+            <p>Tel: 916-345-1325</p>
+        </div>
+        <div class="sucursal">
+
+            <h3>Sucursal 4</h3>
+
+            <p>Calle Eusebio Castillo no. 204 Balancan.</p>
+
+            <p>Balancan, Tabasco.</p>
+            <p>Tel: 934-183-4740</p>
+        </div>
+        <div class="sucursal">
+
+            <h3>Sucursal 5</h3>
+
+            <p>Calle Carlos A. Madrazo s/n (fte. al hospital regional) Balancan</p>
+
+            <p>Balancan, Tabasco.</p>
+            <p>Tel: 934-100-9747</p>
+        </div>
+    
+    </div>
+
+
+
+    <div class="footer-redes">
+
+        <a href="https://wa.me/529341128504" target="_blank">
+            WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/laotra.ferreterias.7" target="_blank">
+            Facebook
+        </a>
+
+        <a href="https://www.instagram.com/laotraferreterias/" target="_blank">
+            Instagram
+        </a>
+
+    </div>
+
+</footer>
+
+<div id="overlay"></div>
+
+</body>
+
+</html>
