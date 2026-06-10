@@ -210,27 +210,31 @@ function actualizarCarrito(){
 
             <div class="controles">
 
-                <button
-                onclick="cambiarCantidad('${item.codigo}',-1)">
+    <button
+    onclick="cambiarCantidad('${item.codigo}',-1)">
+        −
+    </button>
 
-                    -
+    <input
+        type="number"
+        min="1"
+        value="${item.cantidad}"
+        onchange="actualizarCantidad('${item.codigo}', this.value)"
+        class="cantidadInput"
+    >
 
-                </button>
+    <button
+    onclick="cambiarCantidad('${item.codigo}',1)">
+        +
+    </button>
 
-                <span>
+    <button
+    class="btnEliminar"
+    onclick="eliminarProducto('${item.codigo}')">
+        🗑️
+    </button>
 
-                    ${item.cantidad}
-
-                </span>
-
-                <button
-                onclick="cambiarCantidad('${item.codigo}',1)">
-
-                    +
-
-                </button>
-
-            </div>
+</div>
 
         `;
 
@@ -290,7 +294,36 @@ function cambiarCantidad(
     guardarCarrito();
 
 }
+function actualizarCantidad(codigo, nuevaCantidad){
 
+    nuevaCantidad = parseInt(nuevaCantidad);
+
+    if(isNaN(nuevaCantidad) || nuevaCantidad < 1){
+
+        eliminarProducto(codigo);
+        return;
+    }
+
+    const item = carrito.find(
+        p => String(p.codigo) === String(codigo)
+    );
+
+    if(!item) return;
+
+    item.cantidad = nuevaCantidad;
+
+    guardarCarrito();
+
+}
+function eliminarProducto(codigo){
+
+    carrito = carrito.filter(
+        p => String(p.codigo) !== String(codigo)
+    );
+
+    guardarCarrito();
+
+}
 function actualizarPaginacion(){
 
     let paginacion =
