@@ -560,3 +560,28 @@ footer h2{
     background:#35d0ff;
 
 }
+@keyframes rebote {
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    25%{
+        transform:scale(1.25);
+    }
+
+    50%{
+        transform:scale(0.95);
+    }
+
+    75%{
+        transform:scale(1.15);
+    }
+
+}
+
+.rebote{
+
+    animation:rebote .6s ease;
+
+}
