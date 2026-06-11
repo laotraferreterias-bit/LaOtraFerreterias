@@ -32,30 +32,27 @@
 </header>
 
 <section class="busqueda">
-
     <input
         type="text"
         id="buscador"
         placeholder="Buscar producto..."
     >
-    <select id="filtroCategoria">
-
-        <option value="">
-            TODOS LOS PRODUCTOS
-        </option>
-
-    </select>
-
 </section>
 
 <main>
+
+    <aside class="filtros">
+
+        <div id="categorias"></div>
+
+    </aside>
+
 
 <button id="abrirCarrito">
 
     🛒 <span id="contadorMovil">0</span>
 
 </button>
-
     <div class="catalogo">
 
         <section id="productos"></section>
@@ -93,8 +90,6 @@
 </aside>
 
 </main>
-
-<script src="js/app.js"></script>
 
 <footer>
 
