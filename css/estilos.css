@@ -44,38 +44,47 @@ header{
 
     width:100%;
 
-    padding:12px;
+    padding:18px 22px;
 
-    font-size:16px;
+    font-size:18px;
 
-    border:1px solid #ccc;
+    border:1px solid #ddd;
 
-    border-radius:8px;
+    border-radius:15px;
+
 }
-#filtroCategoria{
 
-    width:100%;
-
-    margin-top:10px;
-
-    padding:12px;
-
-    font-size:16px;
-
-    border:1px solid #ccc;
-
-    border-radius:8px;
-
-    background:white;
-}
 
 main{
-
     display:flex;
-
     gap:20px;
-
     padding:20px;
+}
+
+.filtros{
+
+    width:320px;
+
+    flex-shrink:0;
+
+    background:white;
+
+    border-right:1px solid #e5e5e5;
+
+    padding-right:25px;
+
+}
+
+.catalogo{
+
+    flex:1;
+
+    padding-left:25px;
+
+}
+
+.catalogo{
+    flex:1;
 }
 
 #productos{
@@ -361,69 +370,15 @@ main{
     right:0;
 
 }
-
 @media (max-width:768px){
 
     main{
-
-        display:block;
-
-        padding:10px;
-
+        flex-direction:column;
     }
 
-    #productos{
-
-        display:grid;
-
-        grid-template-columns:1fr;
-
-        gap:15px;
-
-    }
-
-    
-
-#abrirCarrito:hover{
-
-    transform:scale(1.05);
-
-}
-
-    #listaCarrito{
-
-        flex:1;
-
-        overflow-y:auto;
-
-        min-height:0;
-
-    }
-
-    .carritoHeader{
-
-        display:flex;
-
-        justify-content:space-between;
-
-        align-items:center;
-
-        margin-bottom:15px;
-
-    }
-
-    #cerrarCarrito{
-
-        display:block;
-
-        border:none;
-
-        background:none;
-
-        font-size:28px;
-
-        cursor:pointer;
-
+    .filtros{
+        width:100%;
+        position:static;
     }
 
 }
@@ -583,5 +538,115 @@ footer h2{
 .rebote{
 
     animation:rebote .6s ease;
+
+}
+
+.grupoCategoria{
+
+    border:1px solid #e5e5e5;
+
+    border-bottom:none;
+
+}
+
+.grupoCategoria:last-child{
+
+    border-bottom:1px solid #e5e5e5;
+
+}
+
+.btnCategoria{
+
+    width:100%;
+
+    background:white;
+
+    border:none;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#0b2f6b;
+
+}
+
+.btnCategoria:hover{
+
+    background:#f8f8f8;
+
+}
+
+.btnCategoria.activa{
+
+    background:#eef7f1;
+
+    color:#20a550;
+
+}
+
+.subcategoriasOcultas{
+
+    background:#fafafa;
+
+    padding:10px 20px 15px 20px;
+
+}
+
+.btnSubcategoria{
+
+    display:block;
+
+    width:100%;
+
+    text-align:left;
+
+    border:none;
+
+    background:none;
+
+    padding:10px 0;
+
+    cursor:pointer;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.btnSubcategoria:hover{
+
+    color:#0b2f6b;
+
+}
+
+.btnSubcategoria.activa{
+
+    color:#20a550;
+
+    font-weight:700;
+
+}
+
+#panelFiltros{
+
+    width:250px;
+
+    flex-shrink:0;
+
+    position:sticky;
+
+    top:20px;
 
 }
