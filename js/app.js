@@ -125,6 +125,8 @@ function mostrarProductos(lista){
 
 function agregarCarrito(codigo){
 
+    const carritoVacio = carrito.length === 0;
+
     const producto =
     productos.find(
         p =>
@@ -160,6 +162,12 @@ function agregarCarrito(codigo){
     }
 
     guardarCarrito();
+
+    if(carritoVacio){
+
+    lanzarConfetiCarrito();
+
+}
 
 }
 
@@ -460,15 +468,23 @@ function cargarCategorias(){
     });
 
 }
+function normalizarTexto(texto){
 
+    return String(texto)
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+
+}
 function aplicarFiltros(){
 
     const texto =
-    document
-    .getElementById("buscador")
-    .value
-    .toLowerCase()
-    .trim();
+    normalizarTexto(
+        document
+        .getElementById("buscador")
+        .value
+    );
 
     const categoria =
     document
@@ -483,13 +499,11 @@ function aplicarFiltros(){
     productosFiltrados =
     productos.filter(producto => {
 
-        const nombre =
-        String(producto.nombre)
-        .toLowerCase();
+    const nombre =
+    normalizarTexto(producto.nombre);
 
-        const codigo =
-        String(producto.codigo)
-        .toLowerCase();
+    const codigo =
+    normalizarTexto(producto.codigo);
 
         const coincideTexto =
 
@@ -634,3 +648,38 @@ if(cerrarCarrito){
     );
 
 }
+function lanzarConfetiCarrito(){
+
+    const boton =
+    document.getElementById("abrirCarrito");
+
+    if(!boton || typeof confetti === "undefined") return;
+
+    const rect =
+    boton.getBoundingClientRect();
+
+    const x =
+    (rect.left + rect.width/2) / window.innerWidth;
+
+    const y =
+    (rect.top + rect.height/2) / window.innerHeight;
+
+    confetti({
+
+        particleCount: 80,
+
+        spread: 70,
+
+        origin: {
+            x: x,
+            y: y
+        }
+
+    });
+
+}
+boton.classList.add("rebote");
+
+setTimeout(() => {
+    boton.classList.remove("rebote");
+}, 600);
