@@ -836,3 +836,41 @@ if(cerrarCarrito){
         boton.classList.remove("rebote");
     }, 600);
 }
+const abrirFiltros =
+document.getElementById("abrirFiltros");
+
+const panelFiltros =
+document.querySelector(".filtros");
+
+const overlayFiltros =
+document.getElementById("overlayFiltros");
+
+if(abrirFiltros){
+
+    abrirFiltros.addEventListener(
+        "click",
+        () => {
+
+            panelFiltros.classList.add("abierto");
+
+            overlayFiltros.classList.add("activo");
+
+        }
+    );
+
+}
+
+if(overlayFiltros){
+
+    overlayFiltros.addEventListener(
+        "click",
+        () => {
+
+            panelFiltros.classList.remove("abierto");
+
+            overlayFiltros.classList.remove("activo");
+
+        }
+    );
+
+}
