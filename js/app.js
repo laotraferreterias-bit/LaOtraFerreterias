@@ -2,7 +2,7 @@ let productos = [];
 let productosFiltrados = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const TELEFONO = "529341128504";
+
 
 const PRODUCTOS_POR_PAGINA = 40;
 let categoriaSeleccionada = "";
@@ -762,9 +762,17 @@ Cantidad: ${item.cantidad}
 
     });
 
-    const url =
+    const telefono =
+document.getElementById("sucursal").value;
 
-`https://wa.me/${TELEFONO}?text=${encodeURIComponent(mensaje)}`;
+const nombreSucursal =
+document.getElementById("sucursal").selectedOptions[0].text;
+
+mensaje +=
+`Sucursal seleccionada: ${nombreSucursal}`;
+
+const url =
+`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(
         url,
