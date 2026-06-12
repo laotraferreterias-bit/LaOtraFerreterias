@@ -274,6 +274,11 @@ function mostrarProductos(lista){
                 <h3>${producto.nombre}</h3>
 
                 <div class="codigo">
+                    Categoria:
+                    ${producto.categoria}
+                </div>
+                
+                <div class="codigo">
                     Código:
                     ${producto.codigo}
                 </div>
