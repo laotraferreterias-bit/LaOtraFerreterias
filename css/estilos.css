@@ -720,3 +720,38 @@ footer h2{
     top:20px;
 
 }
+.selectorSucursal{
+
+    margin:15px 0;
+
+}
+
+.selectorSucursal label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#003464;
+
+}
+
+.selectorSucursal select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    background:white;
+
+}
