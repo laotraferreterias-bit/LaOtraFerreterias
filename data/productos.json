@@ -603,7 +603,7 @@
         "codigo": "1034",
         "nombre": "ALAMBRE DUPLEX TWD # 10",
         "unidad": "MTS",
-        "categoria": "CABLE",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "DUPLEX",
         "imagen": "imagenes/1034.jpg"
     },
@@ -611,7 +611,7 @@
         "codigo": "1035",
         "nombre": "ALAMBRE DUPLEX TWD # 12",
         "unidad": "MTS",
-        "categoria": "CABLE",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "DUPLEX",
         "imagen": "imagenes/1035.jpg"
     },
@@ -619,7 +619,7 @@
         "codigo": "1036",
         "nombre": "ALAMBRE DUPLEX TWD # 14",
         "unidad": "MTS",
-        "categoria": "CABLE",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "DUPLEX",
         "imagen": "imagenes/1036.jpg"
     },
@@ -1724,7 +1724,7 @@
         "nombre": "ART. LIMP. TRAPEADOR    STK. LIM01",
         "unidad": "PZ",
         "categoria": "LIMPIEZA",
-        "subcategoria": "PISO",
+        "subcategoria": "LIMPIAR PISOS",
         "imagen": "imagenes/4364.jpg"
     },
     {
@@ -1732,110 +1732,110 @@
         "nombre": "ASIENTO P/ WC BLANCO ASISAB",
         "unidad": "PZ",
         "categoria": "PLOMERIA",
-        "subcategoria": "TAZA",
+        "subcategoria": "SANITARIO",
         "imagen": "imagenes/4922.jpg"
     },
     {
         "codigo": "8715",
         "nombre": "ASIENTO REDONDO BEIGE P/ W.C.   TR. 47033",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "PLOMERIA",
+        "subcategoria": "SANITARIO",
         "imagen": "imagenes/8715.jpg"
     },
     {
         "codigo": "2054",
         "nombre": "ASIENTO REDONDO BLANCO P/ W.C.   TR. 49903",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "PLOMERIA",
+        "subcategoria": "SANITARIO",
         "imagen": "imagenes/2054.jpg"
     },
     {
         "codigo": "1146",
         "nombre": "ASIENTO REDONDO P/ W.C.  BLANCO   DIC. ASEC01",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "PLOMERIA",
+        "subcategoria": "SANITARIO",
         "imagen": "imagenes/1146.jpg"
     },
     {
         "codigo": "1148",
         "nombre": "ASPERSOR  D/ ESTACA METALICO ST. #7533  STK. 130321",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "JARDIN",
+        "subcategoria": "ASPERSORES",
         "imagen": "imagenes/1148.jpg"
     },
     {
         "codigo": "6479",
         "nombre": "ASPERSOR TIPO REGADERA 32\" TR 10325  STK. 130329",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "JARDIN",
+        "subcategoria": "ASPERSORES",
         "imagen": "imagenes/6479.jpg"
     },
     {
         "codigo": "6841",
         "nombre": "ATOMIZADOR AK 103502   STK 130400",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "LIMPIEZA",
+        "subcategoria": "RELLENABLE",
         "imagen": "imagenes/6841.jpg"
     },
     {
         "codigo": "6063",
         "nombre": "ATRAPATODO P/COLADERA  FLEXIMATIC 2694   TR. 49555",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "PLOMERIA",
+        "subcategoria": "COLADERA",
         "imagen": "imagenes/6063.jpg"
     },
     {
         "codigo": "7550",
         "nombre": "AVELLANADOR DE 3/16\" A 5/8\"   TR. 12868",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "AVELLANADOR",
         "imagen": "imagenes/7550.jpg"
     },
     {
         "codigo": "1150",
         "nombre": "AVELLANADOR TECHO JGO ST. 7349  STK 351F",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "AVELLANADOR",
         "imagen": "imagenes/1150.jpg"
     },
     {
         "codigo": "1151",
         "nombre": "AZADON #1  TR. 10603 ch 01-168",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "AZADONES",
         "imagen": "imagenes/1151.jpg"
     },
     {
         "codigo": "7466",
         "nombre": "AZADON 7-1/2 C/ MANGO D/ MADERA 54\"   STK. 130056",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "AZADONES",
         "imagen": "imagenes/7466.jpg"
     },
     {
         "codigo": "8531",
         "nombre": "AZADON 7-1/2 C/MANGO D/ FIBRA D/VIDRIO 54\"   STK. AZFL1",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "AZADONES",
         "imagen": "imagenes/8531.jpg"
     },
     {
         "codigo": "1153",
         "nombre": "BALANCIN  REPUESTO P/ VALVULA  T/A   04, 1/2\"",
         "unidad": "JUEGO",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1153.jpg"
     },
@@ -1843,7 +1843,7 @@
         "codigo": "1157",
         "nombre": "BALASTRO SLIM LINE DE 1 Y 2 X 32 W",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1157.jpg"
     },
@@ -1851,7 +1851,7 @@
         "codigo": "1159",
         "nombre": "BALASTRO SLIM LINE DE 1 Y 2 X 60 W",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1159.jpg"
     },
@@ -1859,79 +1859,79 @@
         "codigo": "7423",
         "nombre": "BALERO  6001 ZZ   116001ZZ---TA",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/7423.jpg"
     },
     {
         "codigo": "7733",
         "nombre": "BALERO 6000 2RS-TA",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/7733.jpg"
     },
     {
         "codigo": "5938",
         "nombre": "BALERO 607Z",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/5938.jpg"
     },
     {
         "codigo": "5745",
         "nombre": "BALERO P/ 6200  ZZ  116200ZZ",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/5745.jpg"
     },
     {
         "codigo": "5153",
         "nombre": "BALERO P/ 6202    ZZ 5/8",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/5153.jpg"
     },
     {
         "codigo": "4938",
         "nombre": "BALERO P/ BOMBA 6202   116202ZZ-TA",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/4938.jpg"
     },
     {
         "codigo": "4937",
         "nombre": "BALERO P/ BOMBA 6203   116203ZZ---TA",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/4937.jpg"
     },
     {
         "codigo": "5346",
         "nombre": "BALERO P/ MOLDE 3/8 BL-594",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/5346.jpg"
     },
     {
         "codigo": "1160",
         "nombre": "BALERO P/CARRETILLA    ST  8790",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "REFACCIONES",
+        "subcategoria": "BALERO",
         "imagen": "imagenes/1160.jpg"
     },
     {
         "codigo": "2916",
         "nombre": "BANDA B-22 P/ PD5",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/2916.jpg"
     },
@@ -1939,7 +1939,7 @@
         "codigo": "2923",
         "nombre": "BANDA B-30 P/ PD6",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/2923.jpg"
     },
@@ -1947,7 +1947,7 @@
         "codigo": "2917",
         "nombre": "BANDA B-41 P/ PD65",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/2917.jpg"
     },
@@ -1955,7 +1955,7 @@
         "codigo": "1161",
         "nombre": "BANDA P/MOLINO ELECTRICO A-32   14BANDAS017UP",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1161.jpg"
     },
@@ -1963,15 +1963,15 @@
         "codigo": "7518",
         "nombre": "BANDA TAPA GOTERA  CINTA 10CM X 1MT   1481-BANTAP VPXIMBTNE",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ADHESIVO",
+        "subcategoria": "BANDA",
         "imagen": "imagenes/7518.jpg"
     },
     {
         "codigo": "5545",
         "nombre": "BANDA X 86-060 152MM X 1.22M R-BDS69-B60",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/5545.jpg"
     },
@@ -1979,7 +1979,7 @@
         "codigo": "5546",
         "nombre": "BANDA X 86-120  9\" o 22.8 CM     R-BDS69-B120",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/5546.jpg"
     },
@@ -1987,7 +1987,7 @@
         "codigo": "5547",
         "nombre": "BANDA X 86-150 152MM X 1.22M R-BDS69-B150",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "REFACCIONES",
         "subcategoria": "OTROS",
         "imagen": "imagenes/5547.jpg"
     },
@@ -2051,16 +2051,16 @@
         "codigo": "2591",
         "nombre": "BARBOQUEJO CON BARBILLA P/CASCO D/SEGURIDAD  TR.12338",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "SEGURIDAD",
+        "subcategoria": "REPUESTO",
         "imagen": "imagenes/2591.jpg"
     },
     {
         "codigo": "5560",
         "nombre": "BARNIZ PU TRANSPARENTE 279L",
         "unidad": "LT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "PINTURA",
+        "subcategoria": "BARNIZ",
         "imagen": "imagenes/5560.jpg"
     },
     {
@@ -5507,87 +5507,87 @@
         "codigo": "4944",
         "nombre": "CABLE  COBRE THW# 02",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/4944.jpg"
     },
     {
         "codigo": "4448",
         "nombre": "CABLE  COBRE THW# 04",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/4448.jpg"
     },
     {
         "codigo": "1319",
         "nombre": "CABLE  COBRE THW# 06",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1319.jpg"
     },
     {
         "codigo": "1320",
         "nombre": "CABLE  COBRE THW# 08",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1320.jpg"
     },
     {
         "codigo": "1321",
         "nombre": "CABLE  COBRE THW# 10",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1321.jpg"
     },
     {
         "codigo": "1322",
         "nombre": "CABLE  COBRE THW# 12",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1322.jpg"
     },
     {
         "codigo": "4510",
         "nombre": "CABLE  COBRE THW# 12  ECON BICOLOR",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/4510.jpg"
     },
     {
         "codigo": "1323",
         "nombre": "CABLE  COBRE THW# 14",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1323.jpg"
     },
     {
         "codigo": "1324",
         "nombre": "CABLE  COBRE THW# 16",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1324.jpg"
     },
     {
         "codigo": "3856",
         "nombre": "CABLE A 3 X 14 SUB PLANO",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/3856.jpg"
     },
     {
         "codigo": "3997",
         "nombre": "CABLE A NAYLON 3 MM  P/SILLON COLOR cono 170 g",
         "unidad": "KG",
-        "categoria": "OTROS",
+        "categoria": "COSTURA",
         "subcategoria": "OTROS",
         "imagen": "imagenes/3997.jpg"
     },
@@ -5595,7 +5595,7 @@
         "codigo": "5502",
         "nombre": "CABLE ACERADO 1/4 DE  TR 44213",
         "unidad": "MT",
-        "categoria": "OTROS",
+        "categoria": "GALVANIZADO",
         "subcategoria": "OTROS",
         "imagen": "imagenes/5502.jpg"
     },
@@ -5603,7 +5603,7 @@
         "codigo": "7433",
         "nombre": "CABLE ALUMINIO ACSR (217 GRSX MTS) CAL. 1 / 0  CABALACRSR1/0",
         "unidad": "KG",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/7433.jpg"
     },
@@ -5611,7 +5611,7 @@
         "codigo": "1316",
         "nombre": "CABLE ALUMINIO BAJANTE 1 + 1  #6     302605",
         "unidad": "MTS",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1316.jpg"
     },
@@ -5619,7 +5619,7 @@
         "codigo": "7619",
         "nombre": "CABLE ALUMINIO BAJANTE 2 + 1 # 1/0",
         "unidad": "METRO",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/7619.jpg"
     },
@@ -5627,7 +5627,7 @@
         "codigo": "4147",
         "nombre": "CABLE ALUMINIO BAJANTE 2 + 1 #4 AEREO CABAN3X1/0C4 IU.302621",
         "unidad": "MT",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/4147.jpg"
     },
@@ -5635,7 +5635,7 @@
         "codigo": "4344",
         "nombre": "CABLE ALUMINIO BAJANTE 2 + 1 #6",
         "unidad": "MT",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/4344.jpg"
     },
@@ -5643,7 +5643,7 @@
         "codigo": "3857",
         "nombre": "CABLE B 3 X 12 SUB PLANO",
         "unidad": "MTS",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/3857.jpg"
     },
@@ -5651,7 +5651,7 @@
         "codigo": "1077",
         "nombre": "CABLE B NAYLON 6 MM STK  138201 19 kg  TR.44485  20kg  55mt",
         "unidad": "KG",
-        "categoria": "OTROS",
+        "categoria": "COSTURA",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1077.jpg"
     },
@@ -5659,15 +5659,15 @@
         "codigo": "1317",
         "nombre": "CABLE BAJANTE VINILICO P/ TV.",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1317.jpg"
     },
     {
         "codigo": "3858",
         "nombre": "CABLE C 3 X 10 SUB PLANO",
         "unidad": "MTS",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/3858.jpg"
     },
@@ -5675,7 +5675,7 @@
         "codigo": "1079",
         "nombre": "CABLE C NAYLON 8 MM STK  138202 20 kg  TR.44486  20kg  32mt",
         "unidad": "KG",
-        "categoria": "OTROS",
+        "categoria": "COSTURA",
         "subcategoria": "OTROS",
         "imagen": "imagenes/1079.jpg"
     },
@@ -5683,15 +5683,15 @@
         "codigo": "1318",
         "nombre": "CABLE COAXIAL RG-59   010866   TR. 45029",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1318.jpg"
     },
     {
         "codigo": "4560",
         "nombre": "CABLE COBRE DESNUDO #12",
         "unidad": "MT",
-        "categoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
         "subcategoria": "OTROS",
         "imagen": "imagenes/4560.jpg"
     },
@@ -5707,8 +5707,8 @@
         "codigo": "4430",
         "nombre": "CABLE D 3 X 8   SUB PLANO",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/4430.jpg"
     },
     {
@@ -5763,192 +5763,192 @@
         "codigo": "5647",
         "nombre": "CABLE E 3 X 6   SUB PLANO",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/5647.jpg"
     },
     {
         "codigo": "5929",
         "nombre": "CABLE F 3 X 4   SUB PLANO",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/5929.jpg"
     },
     {
         "codigo": "5155",
         "nombre": "CABLE FOTOVOLTAICO 600 V #10  SW-C10-100M NEGRO",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/5155.jpg"
     },
     {
         "codigo": "1214",
         "nombre": "CABLE FOTOVOLTAICO 600 V #10 SW-C10-100MR ROJO",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1214.jpg"
     },
     {
         "codigo": "7917",
         "nombre": "CABLE P/ MOTOR FK 5 HP   3 HILO  CAL.14",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7917.jpg"
     },
     {
         "codigo": "8714",
         "nombre": "CABLE P/BOCINA BICOLOR 22 AWG     TR. 46264",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/8714.jpg"
     },
     {
         "codigo": "6174",
         "nombre": "CABLE PASA CORRIENTE 3 M TR 17543",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/6174.jpg"
     },
     {
         "codigo": "5135",
         "nombre": "CABLE PASACORRIENTE CAL. 8 2.5 M STK  107344",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/5135.jpg"
     },
     {
         "codigo": "1326",
         "nombre": "CABLE PORTA-ELECTRODO #4   WE00040",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1326.jpg"
     },
     {
         "codigo": "6716",
         "nombre": "CABLE THW # 08  DE 100 MT  IUSA",
         "unidad": "ROLL",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/6716.jpg"
     },
     {
         "codigo": "8167",
         "nombre": "CABLE THW # 08 CARRETE X METRO   ARGOS",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/8167.jpg"
     },
     {
         "codigo": "7483",
         "nombre": "CABLE THW # 10 CARRETE X METRO   ARGOS",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7483.jpg"
     },
     {
         "codigo": "6715",
         "nombre": "CABLE THW # 10 DE 100 MT IUSA",
         "unidad": "ROLLO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/6715.jpg"
     },
     {
         "codigo": "7482",
         "nombre": "CABLE THW # 12 CARRETE X METRO ARGOS",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7482.jpg"
     },
     {
         "codigo": "6699",
         "nombre": "CABLE THW # 12 DE 100 MT IUSA",
         "unidad": "ROLLO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/6699.jpg"
     },
     {
         "codigo": "7481",
         "nombre": "CABLE THW # 14 CARRETE X METRO   ARGOS",
         "unidad": "METRO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7481.jpg"
     },
     {
         "codigo": "6698",
         "nombre": "CABLE THW # 14 DE 100 MT IUSA",
         "unidad": "ROLLO",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/6698.jpg"
     },
     {
         "codigo": "7182",
         "nombre": "CABLE THW #3/0",
         "unidad": "MT",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7182.jpg"
     },
     {
         "codigo": "1695",
         "nombre": "CABLE USO RUDO 2 X 10",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1695.jpg"
     },
     {
         "codigo": "3859",
         "nombre": "CABLE USO RUDO 2 X 12",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/3859.jpg"
     },
     {
         "codigo": "7603",
         "nombre": "CABLE USO RUDO 2 X 12  CARRETE X METRO   ARGOS",
         "unidad": "PZ",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/7603.jpg"
     },
     {
         "codigo": "1694",
         "nombre": "CABLE USO RUDO 2 X 14",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1694.jpg"
     },
     {
         "codigo": "1328",
         "nombre": "CABLE USO RUDO 3 X 12",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/1328.jpg"
     },
     {
         "codigo": "3861",
         "nombre": "CABLE USO RUDO 3 X 14",
         "unidad": "MTS",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/3861.jpg"
     },
     {
@@ -31187,7 +31187,7 @@
         "codigo": "7965",
         "nombre": "PISTOLA DE RIEGO #5 PLASTICA BOQUILLA REGULABLE   STK.PIM5RP",
         "unidad": "PZ",
-        "categoria": "OTROS",
+        "categoria": "JARDIN",
         "subcategoria": "OTROS",
         "imagen": "imagenes/7965.jpg"
     },
@@ -45649,7 +45649,7 @@
     },
     {
         "codigo": "8286",
-        "nombre": "VENTILADOR IUSA D/ PISO 20\" 3 VELOCIDADES   IU. 267118",
+        "nombre": "VENTILADOR IUSA D/ PISO 20\" 3 VELOCIDADES   IU. 267118 ADIR. 2077",
         "unidad": "PZ",
         "categoria": "OTROS",
         "subcategoria": "OTROS",
@@ -45830,5 +45830,13 @@
         "categoria": "OTROS",
         "subcategoria": "OTROS",
         "imagen": "imagenes/6693.jpg"
+    },
+    {
+        "codigo": "3940",
+        "nombre": "TIJERA P/ PODAR FLORES 8\"   # 7551   ADIR. 1080  CNX. TIJ8-01",
+        "unidad": "PZ",
+        "categoria": "JARDIN",
+        "subcategoria": "TIJERA",
+        "imagen": "imagenes/3940.jpg"
     }
 ]
