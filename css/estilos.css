@@ -370,9 +370,13 @@ main{
     right:0;
 
 }
-
+#abrirFiltros{
+    display:none;
+}
 @media (max-width:768px){
-
+#abrirFiltros{
+    display:block;
+}
     main{
         flex-direction:column;
     }
