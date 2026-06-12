@@ -370,16 +370,82 @@ main{
     right:0;
 
 }
+
 @media (max-width:768px){
 
     main{
         flex-direction:column;
     }
 
-    .filtros{
-        width:100%;
-        position:static;
-    }
+.filtros{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:280px;
+    height:100vh;
+
+    background:white;
+
+    z-index:7000;
+
+    overflow-y:auto;
+
+    transition:left .3s ease;
+
+    padding:20px;
+
+    box-shadow:2px 0 10px rgba(0,0,0,.2);
+}
+
+.filtros.abierto{
+    left:0;
+}
+
+#abrirFiltros{
+    position:fixed;
+
+    bottom:20px;
+    left:20px;
+
+    z-index:6500;
+
+    border:none;
+
+    padding:14px 18px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#003464;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+    cursor:pointer;
+}
+
+#overlayFiltros{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.4);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:6900;
+}
+
+#overlayFiltros.activo{
+    opacity:1;
+    visibility:visible;
+}
 
 }
 footer{
