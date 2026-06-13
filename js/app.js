@@ -345,7 +345,9 @@ function mostrarProductos(lista){
                 ${producto.unidad || producto.Unidad || ""}
             </div>
 
+            </div>
 
+            <div class="card-footer">
                 <button
                     data-codigo="${
                         tieneVariantes
@@ -355,12 +357,13 @@ function mostrarProductos(lista){
                         Agregar
                 </button>
             </div>
+
         `;
 
         const boton =
-        tarjeta.querySelector(
-            "button"
-        );
+            tarjeta.querySelector(
+                "button"
+            );
 
         boton.addEventListener(
             "click",
@@ -370,6 +373,14 @@ function mostrarProductos(lista){
         contenedor.appendChild(
             tarjeta
         );
+
+        // Forzar layout de tarjeta en columna para que el botón quede abajo
+        tarjeta.style.display = "flex";
+        tarjeta.style.flexDirection = "column";
+        const cuerpo = tarjeta.querySelector(".card-body");
+        if(cuerpo){
+            cuerpo.style.flex = "1";
+        }
 
         if(tieneVariantes){
 
@@ -797,7 +808,17 @@ function agruparProductos(lista){
 
     });
 
-    return Object.values(grupos);
+    // Si un grupo tiene solo 1 variante, no lo devolvemos como grupo:
+    // retornamos la variante individual para que no se muestre selector.
+    return Object.values(grupos).map(g => {
+        if(g && g.variantes && Array.isArray(g.variantes)){
+            if(g.variantes.length === 1){
+                return g.variantes[0];
+            }
+            return g;
+        }
+        return g;
+    });
 
 }
 // Aplica el filtro del buscador y las categorias y muestra el resultado.
