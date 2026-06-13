@@ -1,14 +1,12 @@
 let productos = [];
 let productosFiltrados = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-
-
 const PRODUCTOS_POR_PAGINA = 40;
 let categoriaSeleccionada = "";
 let subcategoriaSeleccionada = "";
 let paginaActual = 1;
-
+//Ahi le pongo comentarios porque me dijiste xd
+//Este toma los productos del json y ya
 fetch("data/productos.json")
 .then(res => res.json())
 .then(data => {
@@ -27,6 +25,8 @@ fetch("data/productos.json")
     console.error(error);
 
 });
+// Hace los botones de categorias y subcat, nada mas.
+// Si le das click cambia el filtro y se vuelve a dibujar todo.
 function crearBotonesCategorias(){
 
     const contenedor =
@@ -51,7 +51,7 @@ function crearBotonesCategorias(){
     }
 
     btnTodos.onclick = () => {
-
+        //Aqui se hacen los click en las categorias y subcategorias
         categoriaSeleccionada = "";
         subcategoriaSeleccionada = "";
 
@@ -214,6 +214,7 @@ function crearBotonesCategorias(){
     });
 
 }
+// Calcula los productos que tocan en esta pag y los muestra.
 function mostrarProductosPagina(){
 
     const inicio =
@@ -225,17 +226,17 @@ function mostrarProductosPagina(){
         PRODUCTOS_POR_PAGINA;
 
     const pagina =
-        productosFiltrados.slice(
-            inicio,
-            fin
-        );
+    agruparProductos(
+        productosFiltrados
+    ).slice(inicio, fin);
 
     mostrarProductos(pagina);
 
     actualizarPaginacion();
 
 }
-
+// Pinta los productos en pantalla.
+// Crea cada tarjeta con su info y boton para agregar.
 function mostrarProductos(lista){
 
     const contenedor =
@@ -245,6 +246,10 @@ function mostrarProductos(lista){
 
     lista.forEach(producto => {
 
+    const tieneVariantes =
+        producto.variantes &&
+        producto.variantes.length > 0;
+
         const tarjeta =
         document.createElement("div");
 
@@ -253,6 +258,7 @@ function mostrarProductos(lista){
         tarjeta.innerHTML = `
 
             ${
+                //Por si no hay imagen
                 producto.imagen ?
 
                 `<img
@@ -268,53 +274,153 @@ function mostrarProductos(lista){
                     Sin imagen
                 </div>`
             }
-
+            
             <div class="card-body">
-
+            
                 <h3>${producto.nombre}</h3>
+               
+            ${
+                producto.medida
+                ? `
+                <div class="codigo">
+                    Medida: ${producto.medida}
+                </div>
+                `
+                : ""
+            }
 
-                <div class="codigo">
-                    Categoria:
-                    ${producto.categoria}
-                </div>
-                
-                <div class="codigo">
-                    Código:
-                    ${producto.codigo}
-                </div>
+            <div class="codigo">
+                Categoria:
+                ${producto.categoria}
+            </div>
 
-                <div class="codigo">
-                    Unidad:
-                    ${producto.unidad || producto.Unidad || ""}
-                </div>
+            ${
+    tieneVariantes
+    ?
+    `
+    <div class="campoMedida">
+
+        <label>Medida</label>
+
+        <select
+            class="selectorMedida"
+            data-nombre="${producto.nombre}">
+            
+            ${
+            //Para las variantes que hay de los productos (Las medidas)
+                producto.variantes
+                .map(v => `
+                    <option
+                        value="${v.codigo}"
+                        data-unidad="${v.unidad}"
+                    >
+                        ${v.medida}
+                    </option>
+                `)
+                .join("")
+            }
+
+        </select>
+
+    </div>
+
+    <div class="codigo codigoProducto">
+
+        Código:
+        ${producto.variantes[0].codigo}
+
+    </div>
+    `
+    :
+    `
+    <div class="codigo">
+        Código:
+        ${producto.codigo}
+    </div>
+    `
+}
+
+            <div class="codigo">
+                Unidad:
+                ${producto.unidad || producto.Unidad || ""}
+            </div>
 
 
                 <button
-                data-codigo="${producto.codigo}">
-
-                    Agregar
-
+                    data-codigo="${
+                        tieneVariantes
+                        ? producto.variantes[0].codigo
+                        : producto.codigo
+                    }">
+                        Agregar
                 </button>
-
             </div>
-
         `;
 
-        tarjeta
-        .querySelector("button")
-        .addEventListener(
+        const boton =
+        tarjeta.querySelector(
+            "button"
+        );
+
+        boton.addEventListener(
             "click",
-            () => agregarCarrito(producto.codigo)
+            () => agregarCarrito(boton.dataset.codigo)
         );
 
         contenedor.appendChild(
             tarjeta
         );
 
+        if(tieneVariantes){
+
+            const selector =
+                tarjeta.querySelector(
+                    ".selectorMedida"
+                );
+
+            const codigoDiv =
+                tarjeta.querySelector(
+                    ".codigoProducto"
+                );
+
+            const boton =
+                tarjeta.querySelector(
+                    "button"
+                );
+
+            const imagen =
+                tarjeta.querySelector("img");
+
+            selector.addEventListener(
+                "change",
+                () => {
+
+                    const variante =
+                        producto.variantes.find(
+                            v => String(v.codigo) === String(selector.value)
+                        );
+
+                    codigoDiv.innerHTML =
+                        `Código: ${selector.value}`;
+
+                    boton.dataset.codigo =
+                        selector.value;
+
+                    if(variante && imagen){
+                        imagen.src = variante.imagen || producto.imagen || "";
+                    }
+
+                }
+            );
+
+        }
+
     });
 
 }
 
+// Mete el producto al carrito con el codigo.
+// Si ya esta, le suma 1.
 function agregarCarrito(codigo){
 
     const carritoVacio = carrito.length === 0;
@@ -363,6 +469,7 @@ function agregarCarrito(codigo){
 
 }
 
+// Guarda el carrito en el navegador y actualiza la vista (como me enseño victor xd)
 function guardarCarrito(){
 
     localStorage.setItem(
@@ -374,6 +481,7 @@ function guardarCarrito(){
 
 }
 
+// Refresca la lista del carrito y el contador de items.
 function actualizarCarrito(){
 
     const lista =
@@ -462,6 +570,8 @@ if(contadorMovil){
 
 }
 
+// Cambia la cantidad de ese producto en el carrito.
+// Si se pone en 0 lo borra.
 function cambiarCantidad(
     codigo,
     cambio
@@ -494,6 +604,7 @@ function cambiarCantidad(
     guardarCarrito();
 
 }
+// Actualiza la cantidad con el numero que escribió el user.
 function actualizarCantidad(codigo, nuevaCantidad){
 
     nuevaCantidad = parseInt(nuevaCantidad);
@@ -515,6 +626,7 @@ function actualizarCantidad(codigo, nuevaCantidad){
     guardarCarrito();
 
 }
+// Saca el producto del carrito y guarda.
 function eliminarProducto(codigo){
 
     carrito = carrito.filter(
@@ -524,6 +636,7 @@ function eliminarProducto(codigo){
     guardarCarrito();
 
 }
+// Actualiza los botones de pagina y dice en que pagina estamos.
 function actualizarPaginacion(){
 
     let paginacion =
@@ -589,6 +702,7 @@ function actualizarPaginacion(){
 
 }
 
+// Va a la pagina anterior si hay.
 function paginaAnterior(){
 
     if(paginaActual > 1){
@@ -606,6 +720,7 @@ function paginaAnterior(){
 
 }
 
+// Va a la pagina siguiente si no es la ultima.
 function paginaSiguiente(){
 
     const totalPaginas =
@@ -630,6 +745,7 @@ function paginaSiguiente(){
 
 }
 
+// Normaliza el texto para buscar tranqui sin tildes ni mayus (Rosita descubrio ese problema xd).
 function normalizarTexto(texto){
 
     return String(texto)
@@ -639,6 +755,52 @@ function normalizarTexto(texto){
         .trim();
 
 }
+// Junta productos iguales con variantes para no repetir tarjetas. (Ya jalo, lo que me decias de las variables)
+function agruparProductos(lista){
+
+    const grupos = {};
+
+    lista.forEach(producto => {
+
+        const tieneMedida =
+            producto.medida &&
+            producto.medida.trim() !== "";
+
+        if(!tieneMedida){
+
+            grupos["SIN-" + producto.codigo] = {
+                ...producto,
+                variantes: null
+            };
+
+            return;
+        }
+
+        const clave =
+            producto.nombre;
+
+        if(!grupos[clave]){
+
+            grupos[clave] = {
+
+                ...producto,
+
+                variantes: []
+
+            };
+
+        }
+
+        grupos[clave]
+        .variantes
+        .push(producto);
+
+    });
+
+    return Object.values(grupos);
+
+}
+// Aplica el filtro del buscador y las categorias y muestra el resultado.
 function aplicarFiltros(){
 
     const texto =
@@ -731,6 +893,7 @@ document
     enviarWhatsApp
 );
 
+// Arma el mensaje con el carrito y abre WhatsApp para mandar la cotizacion(Ahora por sucursales jsjsjs).
 function enviarWhatsApp(){
 
     if(carrito.length === 0){
@@ -820,7 +983,8 @@ if(cerrarCarrito){
         }
     );
 
-}function lanzarConfetiCarrito(){
+}// Lanza confeti y hace rebotar el boton del carrito cuando agregas algo(Gracias a un video de tik tok le agregue esto).
+function lanzarConfetiCarrito(){
 
     const boton =
     document.getElementById("abrirCarrito");
