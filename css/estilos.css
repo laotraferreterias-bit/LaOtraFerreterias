@@ -755,3 +755,48 @@ footer h2{
     background:white;
 
 }
+.selectorMedida{
+
+    width: 100%;
+
+    margin-top: 6px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #d6d6d6;
+
+    border-radius: 8px;
+
+    background: #f8f9fa;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    outline: none;
+
+    transition: all .2s ease;
+
+}
+
+.selectorMedida:hover{
+
+    border-color: #003366;
+
+    background: white;
+
+}
+
+.selectorMedida:focus{
+
+    border-color: #003366;
+
+    box-shadow: 0 0 0 3px rgba(0,51,102,.15);
+
+    background: white;
+
+}
