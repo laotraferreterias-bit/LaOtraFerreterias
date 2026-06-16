@@ -800,3 +800,91 @@ footer h2{
     background: white;
 
 }
+
+/* Estilos para selector de unidad y footer de tarjeta */
+.card-footer{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    padding:12px 15px;
+    background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.00));
+}
+
+.card-footer .selectorUnidad{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    padding:8px 12px;
+    border-radius:8px;
+    border:1px solid #d0d7ea;
+    background:linear-gradient(#ffffff, #f4f8ff);
+    color:#05306b;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 2px 6px rgba(2,46,168,0.06);
+}
+
+.card-footer .selectorUnidad:focus{
+    outline:none;
+    box-shadow:0 0 0 4px rgba(0,49,139,0.06);
+}
+
+/* El botón en el footer será más compacto y con estilo */
+.card-footer button{
+    flex:0 0 auto;
+    width:auto;
+    padding:10px 16px;
+    border-radius:8px;
+    background:#0b4bd6;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.card-footer button:hover{
+    background:#063ea8;
+}
+
+/* Ajustes para el input de cantidad si existe en footer */
+.card-footer .cantidadProducto{
+    width:72px;
+    padding:8px 10px;
+    border-radius:8px;
+    border:1px solid #d0d7ea;
+}
+
+/* Modal de Información del producto */
+.infoModal{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:8000;
+    max-width:560px;
+    width:90%;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 8px 30px rgba(0,0,0,.3);
+    overflow:hidden;
+}
+
+.infoModalContent{
+    padding:18px;
+}
+
+.btnCerrarInfo{
+    position:absolute;
+    right:12px;
+    top:8px;
+    border:none;
+    background:none;
+    font-size:20px;
+    cursor:pointer;
+    color:#003464;
+}
+
+.infoTexto{
+    margin-top:10px;
+    color:#333;
+    line-height:1.4;
+}
