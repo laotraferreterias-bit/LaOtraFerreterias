@@ -255,6 +255,22 @@ function mostrarProductos(lista){
 
         tarjeta.className = "card";
 
+        const tieneInfo =
+            (producto.informacion &&
+             String(producto.informacion).trim() !== "") ||
+            (tieneVariantes &&
+             producto.variantes.some(v =>
+                v.informacion && String(v.informacion).trim() !== ""
+             ));
+
+        const infoInicial =
+            tieneVariantes &&
+            producto.variantes[0] &&
+            producto.variantes[0].informacion &&
+            String(producto.variantes[0].informacion).trim() !== ""
+            ? producto.variantes[0].informacion
+            : producto.informacion || '';
+
         tarjeta.innerHTML = `
 
             ${
@@ -374,11 +390,11 @@ function mostrarProductos(lista){
                         Agregar
                 </button>
                 ${
-                    producto.informacion && String(producto.informacion).trim() !== ""
+                    tieneInfo
                     ? `
                     <button
                         class="btnInfo"
-                        data-info="${encodeURIComponent(producto.informacion)}">
+                        data-info="${encodeURIComponent(infoInicial)}">
                         Información
                     </button>
                     `
@@ -493,7 +509,7 @@ function mostrarProductos(lista){
                 "change",
                 () => {
 
-                    const variante =
+                            const variante =
                         producto.variantes.find(
                             v => String(v.codigo) === String(selector.value)
                         );
@@ -517,6 +533,21 @@ function mostrarProductos(lista){
 
                     if(variante && imagen){
                         imagen.src = variante.imagen || producto.imagen || "";
+                    }
+
+                    const btnInfo = tarjeta.querySelector('.btnInfo');
+                    if(btnInfo){
+                        const nuevaInfo =
+                            variante && variante.informacion && String(variante.informacion).trim() !== ""
+                            ? variante.informacion
+                            : producto.informacion || '';
+
+                        if(String(nuevaInfo).trim() !== ""){
+                            btnInfo.dataset.info = encodeURIComponent(nuevaInfo);
+                            btnInfo.style.display = '';
+                        } else {
+                            btnInfo.style.display = 'none';
+                        }
                     }
 
                 }
