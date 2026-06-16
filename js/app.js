@@ -345,6 +345,21 @@ function mostrarProductos(lista){
                 ${producto.unidad || producto.Unidad || ""}
             </div>
 
+            ${
+                (producto.unidad2 && producto.unidad2.trim() !== "")
+                ?
+                `
+                <div class="codigo">
+                    Unidad alternativa:
+                    <select class="selectorUnidad">
+                        <option value="${producto.unidad}">${producto.unidad}</option>
+                        <option value="${producto.unidad2}">${producto.unidad2}</option>
+                    </select>
+                </div>
+                `
+                : ""
+            }
+
             </div>
 
             <div class="card-footer">
@@ -353,9 +368,23 @@ function mostrarProductos(lista){
                         tieneVariantes
                         ? producto.variantes[0].codigo
                         : producto.codigo
-                    }">
+                    }"
+                    data-unidad="${producto.unidad || ''}"
+                    data-medida="${producto.medida || ''}">
                         Agregar
                 </button>
+                ${
+                    producto.informacion && String(producto.informacion).trim() !== ""
+                    ? `
+                    <button
+                        class="btnInfo"
+                        data-info="${encodeURIComponent(producto.informacion)}">
+                        Información
+                    </button>
+                    `
+                    : ""
+                }
+
             </div>
 
         `;
@@ -365,14 +394,72 @@ function mostrarProductos(lista){
                 "button"
             );
 
+        const selectorUnidad =
+            tarjeta.querySelector(
+                ".selectorUnidad"
+            );
+
+        // Si hay selector de unidad, inicializamos el data-unidad del botón
+        if(selectorUnidad){
+            boton.dataset.unidad = selectorUnidad.value || (boton.dataset.unidad || "");
+            selectorUnidad.addEventListener("change", () => {
+                boton.dataset.unidad = selectorUnidad.value;
+            });
+        }
+
         boton.addEventListener(
             "click",
-            () => agregarCarrito(boton.dataset.codigo)
+            () => {
+                const unidadSel = boton.dataset.unidad || boton.getAttribute('data-unidad') || '';
+                const medidaSel = boton.dataset.medida || boton.getAttribute('data-medida') || '';
+                agregarCarrito(boton.dataset.codigo, 1, unidadSel, medidaSel);
+            }
         );
 
         contenedor.appendChild(
             tarjeta
         );
+
+        const btnInfo = tarjeta.querySelector('.btnInfo');
+        if(btnInfo){
+            btnInfo.addEventListener('click', () => {
+                const info = decodeURIComponent(btnInfo.dataset.info || '');
+                const overlay = document.getElementById('overlay');
+                if(overlay) overlay.classList.add('activo');
+
+                let modal = document.getElementById('infoModal');
+                if(!modal){
+                    modal = document.createElement('div');
+                    modal.id = 'infoModal';
+                    modal.className = 'infoModal';
+                    document.body.appendChild(modal);
+                }
+
+                modal.innerHTML = `
+                    <div class="infoModalContent">
+                        <button id="cerrarInfo" class="btnCerrarInfo">✕</button>
+                        <h3>${producto.nombre}</h3>
+                        <div class="infoTexto">${info.replace(/\n/g,'<br>')}</div>
+                    </div>
+                `;
+
+                const cerrar = modal.querySelector('#cerrarInfo');
+                if(cerrar){
+                    cerrar.addEventListener('click', () => {
+                        if(overlay) overlay.classList.remove('activo');
+                        modal.remove();
+                    });
+                }
+
+                if(overlay){
+                    overlay.addEventListener('click', () => {
+                        overlay.classList.remove('activo');
+                        if(modal) modal.remove();
+                    }, { once: true });
+                }
+
+            });
+        }
 
         // Forzar layout de tarjeta en columna para que el botón quede abajo
         tarjeta.style.display = "flex";
@@ -414,8 +501,19 @@ function mostrarProductos(lista){
                     codigoDiv.innerHTML =
                         `Código: ${selector.value}`;
 
-                    boton.dataset.codigo =
-                        selector.value;
+                    boton.dataset.codigo = selector.value;
+
+                    // actualizar medida en el boton (texto de la option)
+                    const opt = selector.options[selector.selectedIndex];
+                    const medidaSel = opt ? opt.text : '';
+                    boton.dataset.medida = medidaSel;
+
+                    // si la variante trae unidad, actualizar selector de unidad si existe
+                    const selUnidad = tarjeta.querySelector('.selectorUnidad');
+                    if(selUnidad && variante && variante.unidad){
+                        selUnidad.value = variante.unidad;
+                        boton.dataset.unidad = variante.unidad;
+                    }
 
                     if(variante && imagen){
                         imagen.src = variante.imagen || producto.imagen || "";
@@ -432,51 +530,54 @@ function mostrarProductos(lista){
 
 // Mete el producto al carrito con el codigo.
 // Si ya esta, le suma 1.
-function agregarCarrito(codigo){
+function generarKey(codigo, unidad, medida){
+    return `${codigo}::${unidad||''}::${medida||''}`;
+}
+
+function agregarCarrito(codigo, cantidad = 1, unidad = '', medida = ''){
+
+    cantidad = Number(cantidad);
+    if(isNaN(cantidad) || cantidad < 1) cantidad = 1;
 
     const carritoVacio = carrito.length === 0;
 
     const producto =
     productos.find(
-        p =>
-        String(p.codigo)
-        ===
-        String(codigo)
+        p => String(p.codigo) === String(codigo)
     );
 
     if(!producto) return;
 
+    const key = generarKey(codigo, unidad, medida);
+
     const existente =
     carrito.find(
-        p =>
-        String(p.codigo)
-        ===
-        String(codigo)
+        p => p._key === key
     );
 
     if(existente){
 
-        existente.cantidad++;
+        existente.cantidad += cantidad;
 
     }else{
 
-        carrito.push({
-
+        const item = {
             ...producto,
+            cantidad: cantidad,
+            unidadSeleccionada: unidad || producto.unidad || '',
+            medidaSeleccionada: medida || producto.medida || '',
+            _key: key
+        };
 
-            cantidad:1
-
-        });
+        carrito.push(item);
 
     }
 
     guardarCarrito();
 
     if(carritoVacio){
-
-    lanzarConfetiCarrito();
-
-}
+        lanzarConfetiCarrito();
+    }
 
 }
 
@@ -508,53 +609,33 @@ function actualizarCarrito(){
 
         total += item.cantidad;
 
-        const div =
-        document.createElement("div");
+        const div = document.createElement("div");
+        div.className = "itemCarrito";
 
-        div.className =
-        "itemCarrito";
+        const unidadTexto = item.unidadSeleccionada || item.unidad || "";
+        const medidaTexto = item.medidaSeleccionada || item.medida || "";
 
         div.innerHTML = `
-
-            <strong>
-
-                ${item.nombre}
-
-            </strong>
-
+            <strong>${item.nombre}</strong>
             <br>
-
-            Código:
-            ${item.codigo}
-
+            Código: ${item.codigo}
+            ${unidadTexto ? `<br>Unidad: ${unidadTexto}` : ''}
+            ${medidaTexto ? `<br>Medida: ${medidaTexto}` : ''}
             <div class="controles">
+                <button onclick="cambiarCantidad('${item._key}',-1)">−</button>
 
-    <button
-    onclick="cambiarCantidad('${item.codigo}',-1)">
-        −
-    </button>
+                <input
+                    type="number"
+                    min="1"
+                    value="${item.cantidad}"
+                    onchange="actualizarCantidad('${item._key}', this.value)"
+                    class="cantidadInput"
+                >
 
-    <input
-        type="number"
-        min="1"
-        value="${item.cantidad}"
-        onchange="actualizarCantidad('${item.codigo}', this.value)"
-        class="cantidadInput"
-    >
+                <button onclick="cambiarCantidad('${item._key}',1)">+</button>
 
-    <button
-    onclick="cambiarCantidad('${item.codigo}',1)">
-        +
-    </button>
-
-    <button
-    class="btnEliminar"
-    onclick="eliminarProducto('${item.codigo}')">
-        🗑️
-    </button>
-
-</div>
-
+                <button class="btnEliminar" onclick="eliminarProducto('${item._key}')">🗑️</button>
+            </div>
         `;
 
         lista.appendChild(div);
@@ -584,51 +665,34 @@ if(contadorMovil){
 // Cambia la cantidad de ese producto en el carrito.
 // Si se pone en 0 lo borra.
 function cambiarCantidad(
-    codigo,
+    key,
     cambio
 ){
 
-    const item =
-    carrito.find(
-        p =>
-        String(p.codigo)
-        ===
-        String(codigo)
-    );
+    const item = carrito.find(p => p._key === key);
 
     if(!item) return;
 
     item.cantidad += cambio;
 
     if(item.cantidad <= 0){
-
-        carrito =
-        carrito.filter(
-            p =>
-            String(p.codigo)
-            !==
-            String(codigo)
-        );
-
+        carrito = carrito.filter(p => p._key !== key);
     }
 
     guardarCarrito();
 
 }
 // Actualiza la cantidad con el numero que escribió el user.
-function actualizarCantidad(codigo, nuevaCantidad){
+function actualizarCantidad(key, nuevaCantidad){
 
     nuevaCantidad = parseInt(nuevaCantidad);
 
     if(isNaN(nuevaCantidad) || nuevaCantidad < 1){
-
-        eliminarProducto(codigo);
+        eliminarProducto(key);
         return;
     }
 
-    const item = carrito.find(
-        p => String(p.codigo) === String(codigo)
-    );
+    const item = carrito.find(p => p._key === key);
 
     if(!item) return;
 
@@ -638,11 +702,9 @@ function actualizarCantidad(codigo, nuevaCantidad){
 
 }
 // Saca el producto del carrito y guarda.
-function eliminarProducto(codigo){
+function eliminarProducto(key){
 
-    carrito = carrito.filter(
-        p => String(p.codigo) !== String(codigo)
-    );
+    carrito = carrito.filter(p => p._key !== key);
 
     guardarCarrito();
 
@@ -933,16 +995,15 @@ function enviarWhatsApp(){
 
 `;
 
-    carrito.forEach(
-        (item,index)=>{
+    carrito.forEach((item, index) => {
+        const unidadTexto = item.unidadSeleccionada || item.unidad || '';
+        const medidaTexto = item.medidaSeleccionada || item.medida || '';
 
-        mensaje +=
-
-`${index+1}. ${item.nombre}
-Código: ${item.codigo}
-Cantidad: ${item.cantidad}
-
-`;
+        mensaje += `${index+1}. ${item.nombre}\n`;
+        mensaje += `Código: ${item.codigo}\n`;
+        if(unidadTexto) mensaje += `Unidad: ${unidadTexto}\n`;
+        if(medidaTexto) mensaje += `Medida: ${medidaTexto}\n`;
+        mensaje += `Cantidad: ${item.cantidad}\n\n`;
 
     });
 
