@@ -9,3 +9,4 @@ Le agregue un boton con un DIV que permite tener un carrito, el cual se sobrepon
 El codigo en si no es una tienda virtual, es un catalogo aunque se puede convertir en una tienda manejandolo bien. Por el momento solo genera peticiones de cotizaciones.
 Los productos que tengan el mismo nombre pero que en su informacion tengan diferentes medidas, se ponen en una sola tarjeta y el producto permite cambiar la medida, tambien cambia la imagen dependiendo de la medida y cambia su codigo del sistema.
 Debajo de todo, tiene una tarjeta que permite ver las sucursales fisicas.
+Tambien le puedes agregar informacion en cada producto, nombrando este apartado como "informacion". Para que te des una idea, puedes ver los productos que ya estan agregados en este programa. El codigo 7224 tiene agregado informacion. Puedes buscarlo en la pagina visual: https://laotraferreterias-bit.github.io/LaOtraFerreterias/
