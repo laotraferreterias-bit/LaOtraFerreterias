@@ -1,12 +1,13 @@
 let productos = [];
 let productosFiltrados = [];
+let productosAgrupados = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const PRODUCTOS_POR_PAGINA = 40;
 let categoriaSeleccionada = "";
 let subcategoriaSeleccionada = "";
 let paginaActual = 1;
-//Ahi le pongo comentarios porque me dijiste xd
-//Este toma los productos del json y ya
+// nica en serio este js lo hice medio a la rápida xddd
+// agarra el json de productos y ya
 fetch("data/productos.json")
 .then(res => res.json())
 .then(data => {
@@ -25,8 +26,8 @@ fetch("data/productos.json")
     console.error(error);
 
 });
-// Hace los botones de categorias y subcat, nada mas.
-// Si le das click cambia el filtro y se vuelve a dibujar todo.
+// hace los botones de categorias y subcats, na mas
+// si le das click cambia el filtro y se repinta todo otra vez
 function crearBotonesCategorias(){
 
     const contenedor =
@@ -214,8 +215,13 @@ function crearBotonesCategorias(){
     });
 
 }
-// Calcula los productos que tocan en esta pag y los muestra.
+// checa que productos entran en la pagina y los muestra, para que no queden mal contados
 function mostrarProductosPagina(){
+
+    // Agrupar una sola vez para que la paginación sea correcta
+    productosAgrupados = agruparProductos(
+        productosFiltrados
+    );
 
     const inicio =
         (paginaActual - 1) *
@@ -225,18 +231,15 @@ function mostrarProductosPagina(){
         inicio +
         PRODUCTOS_POR_PAGINA;
 
-    const pagina =
-    agruparProductos(
-        productosFiltrados
-    ).slice(inicio, fin);
+    const pagina = productosAgrupados.slice(inicio, fin);
 
     mostrarProductos(pagina);
 
     actualizarPaginacion();
 
 }
-// Pinta los productos en pantalla.
-// Crea cada tarjeta con su info y boton para agregar.
+// dibuja los productos en pantalla
+// cada tarjeta es una carta con su info y botoncito para agregar
 function mostrarProductos(lista){
 
     const contenedor =
@@ -274,7 +277,7 @@ function mostrarProductos(lista){
         tarjeta.innerHTML = `
 
             ${
-                //Por si no hay imagen
+                // si no hay imagen, mostramos un cartoncito de placeholder
                 producto.imagen ?
 
                 `<img
@@ -299,7 +302,7 @@ function mostrarProductos(lista){
                 producto.medida
                 ? `
                 <div class="codigo">
-                    Medida: ${producto.medida}
+                    Opciones: ${producto.medida}
                 </div>
                 `
                 : ""
@@ -316,14 +319,14 @@ function mostrarProductos(lista){
     `
     <div class="campoMedida">
 
-        <label>Medida</label>
+        <label>Opciones</label>
 
         <select
             class="selectorMedida"
             data-nombre="${producto.nombre}">
             
             ${
-            //Para las variantes que hay de los productos (Las medidas)
+            // para las variantes de producto, pueden ser medidas o colores o lo que sea
                 producto.variantes
                 .map(v => `
                     <option
@@ -559,8 +562,8 @@ function mostrarProductos(lista){
 
 }
 
-// Mete el producto al carrito con el codigo.
-// Si ya esta, le suma 1.
+// mete el producto al carrito con el codigo
+// si ya esta, solo le suma mas cantidad y ya
 function generarKey(codigo, unidad, medida){
     return `${codigo}::${unidad||''}::${medida||''}`;
 }
@@ -624,7 +627,7 @@ function guardarCarrito(){
 
 }
 
-// Refresca la lista del carrito y el contador de items.
+// refresca el carrito en la pantalla y pone bien el contador de items
 function actualizarCarrito(){
 
     const lista =
@@ -770,7 +773,7 @@ function actualizarPaginacion(){
 
     const totalPaginas =
     Math.ceil(
-        productosFiltrados.length
+        productosAgrupados.length
         /
         PRODUCTOS_POR_PAGINA
     );
@@ -829,7 +832,7 @@ function paginaSiguiente(){
 
     const totalPaginas =
     Math.ceil(
-        productosFiltrados.length
+        productosAgrupados.length
         /
         PRODUCTOS_POR_PAGINA
     );
@@ -914,7 +917,7 @@ function agruparProductos(lista){
     });
 
 }
-// Aplica el filtro del buscador y las categorias y muestra el resultado.
+// aplica lo que escribiste en el buscador y los filtros de categoria/subcategoria
 function aplicarFiltros(){
 
     const texto =
@@ -1007,7 +1010,7 @@ document
     enviarWhatsApp
 );
 
-// Arma el mensaje con el carrito y abre WhatsApp para mandar la cotizacion(Ahora por sucursales jsjsjs).
+// arma el mensaje con el carrito y abre whatsapp para mandar la cotizacion, facil y rapido
 function enviarWhatsApp(){
 
     if(carrito.length === 0){
@@ -1096,7 +1099,7 @@ if(cerrarCarrito){
         }
     );
 
-}// Lanza confeti y hace rebotar el boton del carrito cuando agregas algo(Gracias a un video de tik tok le agregue esto).
+}// Lanza confeti y hace rebotar el boton del carrito cuando agregas algo, puro tiktok vibes
 function lanzarConfetiCarrito(){
 
     const boton =
