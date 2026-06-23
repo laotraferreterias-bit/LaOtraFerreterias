@@ -3135,50 +3135,6 @@
         "informacion": ""
     },
     {
-        "codigo": "1180",
-        "nombre": "BASCULA ROMANA RESORTE",
-        "medida": "12 KG",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "MEDICION",
-        "subcategoria": "BASCULAS",
-        "imagen": "imagenes/1180.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1181",
-        "nombre": "BASCULA ROMANA RESORTE",
-        "medida": "25 KG",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "MEDICION",
-        "subcategoria": "BASCULAS",
-        "imagen": "imagenes/1181.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1182",
-        "nombre": "BASCULA ROMANA RESORTE",
-        "medida": "50 KG",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "MEDICION",
-        "subcategoria": "BASCULAS",
-        "imagen": "imagenes/1182.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "2356",
-        "nombre": "BASCULA ROMANA RESORTE",
-        "medida": "100 KG",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "MEDICION",
-        "subcategoria": "BASCULAS",
-        "imagen": "imagenes/2356.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "6740",
         "nombre": "BASCULA DIGITAL 5 KG SANTUL   TR.15161  ADIR. 1676",
         "medida": "",
@@ -3231,6 +3187,50 @@
         "categoria": "MEDICION",
         "subcategoria": "BASCULAS",
         "imagen": "imagenes/8717.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1180",
+        "nombre": "BASCULA ROMANA RESORTE",
+        "medida": "12 KG",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "MEDICION",
+        "subcategoria": "BASCULAS",
+        "imagen": "imagenes/1180.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1181",
+        "nombre": "BASCULA ROMANA RESORTE",
+        "medida": "25 KG",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "MEDICION",
+        "subcategoria": "BASCULAS",
+        "imagen": "imagenes/1181.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1182",
+        "nombre": "BASCULA ROMANA RESORTE",
+        "medida": "50 KG",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "MEDICION",
+        "subcategoria": "BASCULAS",
+        "imagen": "imagenes/1182.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "2356",
+        "nombre": "BASCULA ROMANA RESORTE",
+        "medida": "100 KG",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "MEDICION",
+        "subcategoria": "BASCULAS",
+        "imagen": "imagenes/2356.jpg",
         "informacion": ""
     },
     {
@@ -3509,61 +3509,6 @@
         "informacion": ""
     },
     {
-        "codigo": "1198",
-        "nombre": "BISAGRA TUBULAR",
-        "medida": "3/8\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "CERRAJERIA",
-        "subcategoria": "BISAGRAS",
-        "imagen": "imagenes/1198.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1199",
-        "nombre": "BISAGRA TUBULAR",
-        "medida": "1/2\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "CERRAJERIA",
-        "subcategoria": "BISAGRAS",
-        "imagen": "imagenes/1199.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1200",
-        "nombre": "BISAGRA TUBULAR",
-        "medida": "5/8\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "CERRAJERIA",
-        "subcategoria": "BISAGRAS",
-        "imagen": "imagenes/1200.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1201",
-        "nombre": "BISAGRA TUBULAR",
-        "medida": "3/4\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "CERRAJERIA",
-        "subcategoria": "BISAGRAS",
-        "imagen": "imagenes/1201.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "8228",
-        "nombre": "BISAGRA TUBULAR",
-        "medida": "1\"",
-        "unidad": "PIEZA",
-        "unidad2": "",
-        "categoria": "CERRAJERIA",
-        "subcategoria": "BISAGRAS",
-        "imagen": "imagenes/8228.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "4942",
         "nombre": "BISAGRA DE COCINA PAR BISPBH",
         "medida": "",
@@ -3715,6 +3660,61 @@
         "categoria": "CERRAJERIA",
         "subcategoria": "BISAGRAS",
         "imagen": "imagenes/4758.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1198",
+        "nombre": "BISAGRA TUBULAR",
+        "medida": "3/8\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "CERRAJERIA",
+        "subcategoria": "BISAGRAS",
+        "imagen": "imagenes/1198.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1199",
+        "nombre": "BISAGRA TUBULAR",
+        "medida": "1/2\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "CERRAJERIA",
+        "subcategoria": "BISAGRAS",
+        "imagen": "imagenes/1199.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1200",
+        "nombre": "BISAGRA TUBULAR",
+        "medida": "5/8\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "CERRAJERIA",
+        "subcategoria": "BISAGRAS",
+        "imagen": "imagenes/1200.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1201",
+        "nombre": "BISAGRA TUBULAR",
+        "medida": "3/4\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "CERRAJERIA",
+        "subcategoria": "BISAGRAS",
+        "imagen": "imagenes/1201.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "8228",
+        "nombre": "BISAGRA TUBULAR",
+        "medida": "1\"",
+        "unidad": "PIEZA",
+        "unidad2": "",
+        "categoria": "CERRAJERIA",
+        "subcategoria": "BISAGRAS",
+        "imagen": "imagenes/8228.jpg",
         "informacion": ""
     },
     {
@@ -5610,20 +5610,9 @@
         "informacion": ""
     },
     {
-        "codigo": "1095",
-        "nombre": "BROCA A1 P/ CON A/V   3/16  X 4\" CRUZ TR. 11200",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1095.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1270",
-        "nombre": "BROCA A1 P/ CON A/V   3/16\" X 4\" ST 7025",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "3/16\" X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5632,20 +5621,9 @@
         "informacion": ""
     },
     {
-        "codigo": "3980",
-        "nombre": "BROCA A1 P/ CON A/V  1/4 X 4\" SDS TR. 11263",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/3980.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1271",
-        "nombre": "BROCA A2 P/ CON A/V   1/4\"   X 4\" ST 7026",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "1/4 X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5655,8 +5633,8 @@
     },
     {
         "codigo": "1272",
-        "nombre": "BROCA A2 P/ CON A/V   1/4\"   X 6\" ST 7027",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "1/4 X 6",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5665,31 +5643,9 @@
         "informacion": ""
     },
     {
-        "codigo": "4601",
-        "nombre": "BROCA A2 P/ CON A/V  1/4 X 6\" SDS TR. 11264",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/4601.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "4673",
-        "nombre": "BROCA A2 P/ CON AV    1/4   X  4\" CRUZ TR  11203",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/4673.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1273",
-        "nombre": "BROCA A3 P/ CON A/V   1/4\"   X 12\"  ST 7098",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "1/4 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5698,20 +5654,9 @@
         "informacion": ""
     },
     {
-        "codigo": "1096",
-        "nombre": "BROCA A3 P/ CON A/V   5/16  X 4  CRUZ TR. 11212",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1096.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1274",
-        "nombre": "BROCA A3 P/ CON A/V   5/16\" X 4\" ST. 7049",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "5/16 X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5721,8 +5666,8 @@
     },
     {
         "codigo": "1276",
-        "nombre": "BROCA A3 P/ CON A/V   5/16\" X 6\" ST 7099",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "5/16 X 6",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5731,20 +5676,9 @@
         "informacion": ""
     },
     {
-        "codigo": "4599",
-        "nombre": "BROCA A3 P/ CON A/V  5/16 X 6\" SDS TR. 11269",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/4599.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1278",
-        "nombre": "BROCA A4 P/ CON A/V   5/16\" X 12\" ST 6969",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "5/16 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5753,20 +5687,9 @@
         "informacion": ""
     },
     {
-        "codigo": "4603",
-        "nombre": "BROCA A4 P/ CON A/V  3/8 X 6\" SDS TR. 11272",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/4603.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "1279",
-        "nombre": "BROCA A5 P/ CON A/V   3/8\"   X 12\" ST 6970",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "3/8 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5775,9 +5698,53 @@
         "informacion": ""
     },
     {
+        "codigo": "1282",
+        "nombre": "BROCA A1 P/ CON A/V",
+        "medida": "1/2 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1282.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1095",
+        "nombre": "BROCA A1 P/ CON A/V DE CRUZ",
+        "medida": "3/16 X 4",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1095.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4673",
+        "nombre": "BROCA A1 P/ CON A/V DE CRUZ",
+        "medida": "1/4 X 4",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/4673.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1096",
+        "nombre": "BROCA A1 P/ CON A/V DE CRUZ",
+        "medida": "5/16 X 4",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1096.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "1097",
-        "nombre": "BROCA A5 P/ CON A/V   3/8\"   X 5\" CRUZ TR. 11221",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V DE CRUZ",
+        "medida": "3/8 X 5",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5787,8 +5754,8 @@
     },
     {
         "codigo": "8841",
-        "nombre": "BROCA A5 P/ CON A/V   5/8\"   X 6\" CRUZ TR. 11236",
-        "medida": "",
+        "nombre": "BROCA A1 P/ CON A/V DE CRUZ",
+        "medida": "5/8 X 6",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5797,20 +5764,53 @@
         "informacion": ""
     },
     {
-        "codigo": "1282",
-        "nombre": "BROCA A6 P/ CON A/V   1/2\"   X  6\" ST. 6971",
-        "medida": "",
+        "codigo": "3980",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "1/4 X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
         "subcategoria": "BROCAS",
-        "imagen": "imagenes/1282.jpg",
+        "imagen": "imagenes/3980.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4601",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "1/4 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/4601.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4599",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "5/16 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/4599.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4603",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "3/8 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/4603.jpg",
         "informacion": ""
     },
     {
         "codigo": "7551",
-        "nombre": "BROCA A6 P/ CON A/V  1/4 X 12\" SDS TR. 101144",
-        "medida": "",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "1/4 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5820,8 +5820,8 @@
     },
     {
         "codigo": "6040",
-        "nombre": "BROCA A7 P/ CON A/V  3/8 X 12\" SDS TR. 11275",
-        "medida": "",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "3/8 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5831,8 +5831,8 @@
     },
     {
         "codigo": "7549",
-        "nombre": "BROCA A8 P/ CON A/V  1/2 X 12\" SDS TR. 11281",
-        "medida": "",
+        "nombre": "BROCA A2 P/ CON A/V SDS",
+        "medida": "1/2 X 12",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -5860,50 +5860,6 @@
         "categoria": "HERRAMIENTAS MANUALES",
         "subcategoria": "BROCAS",
         "imagen": "imagenes/1477.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "6186",
-        "nombre": "BROCA AV P/CONCRETO 1/2 X 6\" TR 11230",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/6186.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "6183",
-        "nombre": "BROCA AV P/CONCRETO 1/4 X 6\" TR 11206",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/6183.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "6187",
-        "nombre": "BROCA AV P/CONCRETO 3/16 X 6\"    TR. 11258",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/6187.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "6184",
-        "nombre": "BROCA AV P/CONCRETO 5/16 X 6\" TR 11215",
-        "medida": "",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/6184.jpg",
         "informacion": ""
     },
     {
@@ -5937,105 +5893,6 @@
         "categoria": "HERRAMIENTAS MANUALES",
         "subcategoria": "BROCAS",
         "imagen": "imagenes/8471.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1287",
-        "nombre": "BROCA C1 PALETA DE   1/4\"   ST. 6957   STK. BP1/4",
-        "medida": "1/4\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1287.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1288",
-        "nombre": "BROCA C2 PALETA DE   5/16\" ST. 6958   STK. BP5/16",
-        "medida": "5/16\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1288.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1289",
-        "nombre": "BROCA C3 PALETA DE   3/8\"   ST. 6959   STK. BP3/8",
-        "medida": "3/8\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1289.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1290",
-        "nombre": "BROCA C4 PALETA DE   7/16  ST. 6960   STK. BP7/16",
-        "medida": "7/16\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1290.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1291",
-        "nombre": "BROCA C5 PALETA DE   1/2\"   ST. 6961   STK. BP1/2",
-        "medida": "1/2\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1291.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1292",
-        "nombre": "BROCA C6 PALETA DE   5/8\"   ST. 6962   STK. BP5/8",
-        "medida": "5/8\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1292.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1293",
-        "nombre": "BROCA C7 PALETA DE   3/4\"   ST. 6963   STK. BP3/4",
-        "medida": "3/4\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1293.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1294",
-        "nombre": "BROCA C8 PALETA DE   7/8\"   ST. 6964   STK. BP7/8",
-        "medida": "7/8\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1294.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1295",
-        "nombre": "BROCA C9 PALETA DE   1\"      ST. 6965   STK. BP1",
-        "medida": "1\"",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
-        "imagen": "imagenes/1295.jpg",
         "informacion": ""
     },
     {
@@ -6567,9 +6424,108 @@
         "informacion": ""
     },
     {
+        "codigo": "1287",
+        "nombre": "BROCA DE PALETA",
+        "medida": "1/4\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1287.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1288",
+        "nombre": "BROCA DE PALETA",
+        "medida": "5/16\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1288.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1289",
+        "nombre": "BROCA DE PALETA",
+        "medida": "3/8\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1289.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1290",
+        "nombre": "BROCA DE PALETA",
+        "medida": "7/16\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1290.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1291",
+        "nombre": "BROCA DE PALETA",
+        "medida": "1/2\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1291.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1292",
+        "nombre": "BROCA DE PALETA",
+        "medida": "5/8\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1292.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1293",
+        "nombre": "BROCA DE PALETA",
+        "medida": "3/4\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1293.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1294",
+        "nombre": "BROCA DE PALETA",
+        "medida": "7/8\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1294.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1295",
+        "nombre": "BROCA DE PALETA",
+        "medida": "1\"",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/1295.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "8309",
-        "nombre": "BROCA ESCALONADA #1   1/8 A 1/2\"     STK. 119370",
-        "medida": "",
+        "nombre": "BROCA ESCALONADA",
+        "medida": "1/8 A 1/2",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -6579,8 +6535,8 @@
     },
     {
         "codigo": "8310",
-        "nombre": "BROCA ESCALONADA #3  3/16 - 7/8\"     STK.119373",
-        "medida": "",
+        "nombre": "BROCA ESCALONADA",
+        "medida": "3/16 A 7/8",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -6590,8 +6546,8 @@
     },
     {
         "codigo": "8311",
-        "nombre": "BROCA ESCALONADA #4  1/4 - 3/4\"     STK.119372",
-        "medida": "",
+        "nombre": "BROCA ESCALONADA",
+        "medida": "1/4 A 3/4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "HERRAMIENTAS MANUALES",
@@ -6776,6 +6732,50 @@
         "informacion": ""
     },
     {
+        "codigo": "6186",
+        "nombre": "BROCA PARA CONCRETO",
+        "medida": "1/2 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/6186.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "6183",
+        "nombre": "BROCA PARA CONCRETO",
+        "medida": "1/4 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/6183.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "6187",
+        "nombre": "BROCA PARA CONCRETO",
+        "medida": "3/16 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/6187.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "6184",
+        "nombre": "BROCA PARA CONCRETO",
+        "medida": "5/16 X 6",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "HERRAMIENTAS MANUALES",
+        "subcategoria": "BROCAS",
+        "imagen": "imagenes/6184.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "5237",
         "nombre": "BROCA PERFILADORA 1/4X1/2X3/4 BH-516",
         "medida": "",
@@ -6924,8 +6924,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/7406.jpg",
         "informacion": ""
     },
@@ -6935,8 +6935,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/4798.jpg",
         "informacion": ""
     },
@@ -6946,8 +6946,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/4799.jpg",
         "informacion": ""
     },
@@ -6957,8 +6957,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/4800.jpg",
         "informacion": ""
     },
@@ -6968,8 +6968,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/5121.jpg",
         "informacion": ""
     },
@@ -6979,8 +6979,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/7951.jpg",
         "informacion": ""
     },
@@ -6990,8 +6990,8 @@
         "medida": "1/2\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1300.jpg",
         "informacion": ""
     },
@@ -7001,8 +7001,8 @@
         "medida": "1\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1299.jpg",
         "informacion": ""
     },
@@ -7012,8 +7012,8 @@
         "medida": "1-1/2\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1301.jpg",
         "informacion": ""
     },
@@ -7023,8 +7023,8 @@
         "medida": "2\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1302.jpg",
         "informacion": ""
     },
@@ -7034,8 +7034,8 @@
         "medida": "2-1/2\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1303.jpg",
         "informacion": ""
     },
@@ -7045,8 +7045,8 @@
         "medida": "3\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1304.jpg",
         "informacion": ""
     },
@@ -7056,8 +7056,8 @@
         "medida": "4\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1305.jpg",
         "informacion": ""
     },
@@ -7067,8 +7067,8 @@
         "medida": "5\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1306.jpg",
         "informacion": ""
     },
@@ -7078,8 +7078,8 @@
         "medida": "6\"",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "HERRAMIENTAS MANUALES",
-        "subcategoria": "BROCAS",
+        "categoria": "PINTURA",
+        "subcategoria": "BROCHAS",
         "imagen": "imagenes/1307.jpg",
         "informacion": ""
     },
@@ -7287,8 +7287,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ILUMINACION",
+        "subcategoria": "FOCO",
         "imagen": "imagenes/6327.jpg",
         "informacion": ""
     },
@@ -7298,8 +7298,8 @@
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "categoria": "ILUMINACION",
+        "subcategoria": "FOCO",
         "imagen": "imagenes/6328.jpg",
         "informacion": ""
     },
@@ -7381,72 +7381,6 @@
         "informacion": ""
     },
     {
-        "codigo": "4944",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#02",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/4944.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "4448",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#04",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/4448.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1319",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#06",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/1319.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1320",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#08",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/1320.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1321",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#10",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/1321.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "1322",
-        "nombre": "CABLE 100% COBRE ARGOS",
-        "medida": "#12",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/1322.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "4510",
         "nombre": "CABLE  COBRE THW# 12  ECON BICOLOR",
         "medida": "#12",
@@ -7458,8 +7392,74 @@
         "informacion": ""
     },
     {
+        "codigo": "4944",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#02",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/4944.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4448",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#04",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/4448.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1319",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#06",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/1319.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1320",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#08",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/1320.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1321",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#10",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/1321.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "1322",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
+        "medida": "#12",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/1322.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "1323",
-        "nombre": "CABLE 100% COBRE ARGOS",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
         "medida": "#14",
         "unidad": "ROLLO",
         "unidad2": "",
@@ -7470,7 +7470,7 @@
     },
     {
         "codigo": "1324",
-        "nombre": "CABLE 100% COBRE ARGOS",
+        "nombre": "CABLE 100% COBRE ARGOS THW",
         "medida": "#16",
         "unidad": "ROLLO",
         "unidad2": "",
@@ -7569,23 +7569,23 @@
     },
     {
         "codigo": "1077",
-        "nombre": "CABLE B NAYLON 6 MM STK  138201 19 kg  TR.44485  20kg  55mt",
+        "nombre": "CABLE  NAYLON",
         "medida": "6 MM",
         "unidad": "KG",
-        "unidad2": "",
-        "categoria": "COSTURA",
-        "subcategoria": "OTROS",
+        "unidad2": "METRO",
+        "categoria": "MATERIALES DE COSTRUCCION",
+        "subcategoria": "CUERDAS",
         "imagen": "imagenes/1077.jpg",
         "informacion": ""
     },
     {
         "codigo": "1079",
-        "nombre": "CABLE C NAYLON 8 MM STK  138202 20 kg  TR.44486  20kg  32mt",
+        "nombre": "CABLE  NAYLON",
         "medida": "8 MM",
         "unidad": "KG",
-        "unidad2": "",
-        "categoria": "COSTURA",
-        "subcategoria": "OTROS",
+        "unidad2": "METRO",
+        "categoria": "MATERIALES DE COSTRUCCION",
+        "subcategoria": "CUERDAS",
         "imagen": "imagenes/1079.jpg",
         "informacion": ""
     },
@@ -7607,7 +7607,7 @@
         "unidad": "MT",
         "unidad2": "",
         "categoria": "ELECTRICIDAD",
-        "subcategoria": "OTROS",
+        "subcategoria": "CABLE",
         "imagen": "imagenes/4560.jpg",
         "informacion": ""
     },
@@ -7635,46 +7635,35 @@
     },
     {
         "codigo": "1080",
-        "nombre": "CABLE D NAYLON 10 MM STK.138203 25kg  TR.44487  20kg  22mt",
+        "nombre": "CABLE  NAYLON",
         "medida": "10 MM",
         "unidad": "KG",
-        "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "unidad2": "METRO",
+        "categoria": "MATERIALES DE COSTRUCCION",
+        "subcategoria": "CUERDAS",
         "imagen": "imagenes/1080.jpg",
         "informacion": ""
     },
     {
         "codigo": "1082",
-        "nombre": "CABLE D NAYLON 13 MM STK.138205 27 kg  TR.44489  30KG  13MT",
+        "nombre": "CABLE  NAYLON",
         "medida": "13 MM",
         "unidad": "KG",
-        "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "unidad2": "METRO",
+        "categoria": "MATERIALES DE COSTRUCCION",
+        "subcategoria": "CUERDAS",
         "imagen": "imagenes/1082.jpg",
         "informacion": ""
     },
     {
         "codigo": "5989",
-        "nombre": "CABLE D NAYLON 19 MM  30KG ( 1 KG = 6.6 MT)   TR.44491",
+        "nombre": "CABLE  NAYLON",
         "medida": "19 MM",
         "unidad": "KG",
-        "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
+        "unidad2": "METRO",
+        "categoria": "MATERIALES DE COSTRUCCION",
+        "subcategoria": "CUERDAS",
         "imagen": "imagenes/5989.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "5990",
-        "nombre": "CABLE D NAYLON 25 MM  ( 1 KG = 3.2 MT )  TR 44473",
-        "medida": "25 MM",
-        "unidad": "KG",
-        "unidad2": "",
-        "categoria": "OTROS",
-        "subcategoria": "OTROS",
-        "imagen": "imagenes/5990.jpg",
         "informacion": ""
     },
     {
@@ -7810,19 +7799,8 @@
         "informacion": ""
     },
     {
-        "codigo": "6716",
-        "nombre": "CABLE THW # 08  DE 100 MT  IUSA",
-        "medida": "#08",
-        "unidad": "ROLL",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/6716.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "8167",
-        "nombre": "CABLE THW # 08 CARRETE X METRO   ARGOS",
+        "nombre": "CABLE THW CARRETE X METRO ARGOS",
         "medida": "#08",
         "unidad": "METRO",
         "unidad2": "",
@@ -7833,7 +7811,7 @@
     },
     {
         "codigo": "7483",
-        "nombre": "CABLE THW # 10 CARRETE X METRO   ARGOS",
+        "nombre": "CABLE THW CARRETE X METRO ARGOS",
         "medida": "#10",
         "unidad": "METRO",
         "unidad2": "",
@@ -7843,19 +7821,8 @@
         "informacion": ""
     },
     {
-        "codigo": "6715",
-        "nombre": "CABLE THW # 10 DE 100 MT IUSA",
-        "medida": "#10",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/6715.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "7482",
-        "nombre": "CABLE THW # 12 CARRETE X METRO ARGOS",
+        "nombre": "CABLE THW CARRETE X METRO ARGOS",
         "medida": "#12",
         "unidad": "METRO",
         "unidad2": "",
@@ -7865,19 +7832,8 @@
         "informacion": ""
     },
     {
-        "codigo": "6699",
-        "nombre": "CABLE THW # 12 DE 100 MT IUSA",
-        "medida": "#12",
-        "unidad": "ROLLO",
-        "unidad2": "",
-        "categoria": "ELECTRICIDAD",
-        "subcategoria": "CABLE",
-        "imagen": "imagenes/6699.jpg",
-        "informacion": ""
-    },
-    {
         "codigo": "7481",
-        "nombre": "CABLE THW # 14 CARRETE X METRO   ARGOS",
+        "nombre": "CABLE THW CARRETE X METRO ARGOS",
         "medida": "#14",
         "unidad": "METRO",
         "unidad2": "",
@@ -7887,8 +7843,41 @@
         "informacion": ""
     },
     {
+        "codigo": "6716",
+        "nombre": "CABLE THW DE 100 MT IUSA",
+        "medida": "#08",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/6716.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "6715",
+        "nombre": "CABLE THW DE 100 MT IUSA",
+        "medida": "#10",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/6715.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "6699",
+        "nombre": "CABLE THW DE 100 MT IUSA",
+        "medida": "#12",
+        "unidad": "ROLLO",
+        "unidad2": "",
+        "categoria": "ELECTRICIDAD",
+        "subcategoria": "CABLE",
+        "imagen": "imagenes/6699.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "6698",
-        "nombre": "CABLE THW # 14 DE 100 MT IUSA",
+        "nombre": "CABLE THW DE 100 MT IUSA",
         "medida": "#14",
         "unidad": "ROLLO",
         "unidad2": "",
@@ -7899,10 +7888,10 @@
     },
     {
         "codigo": "1695",
-        "nombre": "CABLE USO RUDO 2 X 10",
+        "nombre": "CABLE USO RUDO",
         "medida": "2 X 10",
         "unidad": "MTS",
-        "unidad2": "",
+        "unidad2": "ROLLO",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
         "imagen": "imagenes/1695.jpg",
@@ -7910,10 +7899,10 @@
     },
     {
         "codigo": "3859",
-        "nombre": "CABLE USO RUDO 2 X 12",
+        "nombre": "CABLE USO RUDO",
         "medida": "2 X 12",
         "unidad": "MTS",
-        "unidad2": "",
+        "unidad2": "ROLLO",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
         "imagen": "imagenes/3859.jpg",
@@ -7923,7 +7912,7 @@
         "codigo": "7603",
         "nombre": "CABLE USO RUDO 2 X 12  CARRETE X METRO   ARGOS",
         "medida": "",
-        "unidad": "PZ",
+        "unidad": "METRO",
         "unidad2": "",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
@@ -7932,10 +7921,10 @@
     },
     {
         "codigo": "1694",
-        "nombre": "CABLE USO RUDO 2 X 14",
+        "nombre": "CABLE USO RUDO",
         "medida": "2X14",
         "unidad": "MTS",
-        "unidad2": "",
+        "unidad2": "ROLLO",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
         "imagen": "imagenes/1694.jpg",
@@ -7943,10 +7932,10 @@
     },
     {
         "codigo": "1328",
-        "nombre": "CABLE USO RUDO 3 X 12",
+        "nombre": "CABLE USO RUDO",
         "medida": "3X12",
         "unidad": "MTS",
-        "unidad2": "",
+        "unidad2": "ROLLO",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
         "imagen": "imagenes/1328.jpg",
@@ -7954,10 +7943,10 @@
     },
     {
         "codigo": "3861",
-        "nombre": "CABLE USO RUDO 3 X 14",
+        "nombre": "CABLE USO RUDO",
         "medida": "3X14",
         "unidad": "MTS",
-        "unidad2": "",
+        "unidad2": "ROLLO",
         "categoria": "ELECTRICIDAD",
         "subcategoria": "CABLE",
         "imagen": "imagenes/3861.jpg",
@@ -8020,7 +8009,7 @@
     },
     {
         "codigo": "3565",
-        "nombre": "CADENA A1 GAL.   5/32\"  ( 84.3MT= 25 KG)    ST  7881",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "5/32\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8031,7 +8020,7 @@
     },
     {
         "codigo": "1329",
-        "nombre": "CADENA A1 GAL. 1/8\" ( 92.5MT= 25 KG) AK 113801  TR.44260",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "1/8\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8042,7 +8031,7 @@
     },
     {
         "codigo": "1330",
-        "nombre": "CADENA A2 GAL. 3/16\" ( 62 MT= 25 KG) AK.113802  TR.44261",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "3/16\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8053,7 +8042,7 @@
     },
     {
         "codigo": "1331",
-        "nombre": "CADENA A3 GAL.1/4\" (32.5 MT=25 KG) AK.113803 TR.44262 150849",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "1/4\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8064,7 +8053,7 @@
     },
     {
         "codigo": "1332",
-        "nombre": "CADENA A4 GAL. 5/16\" (19 MT = 25 KG) AK.113804  TR.44263",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "5/16\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8075,7 +8064,7 @@
     },
     {
         "codigo": "1333",
-        "nombre": "CADENA A5 GAL. 3/8\" (13.5MT = 25 KG) AK 113805  TR.44264",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "3/8\"",
         "unidad": "MTS",
         "unidad2": "",
@@ -8086,7 +8075,7 @@
     },
     {
         "codigo": "4391",
-        "nombre": "CADENA A6 GAL. 1/2\" ( 7.5 MT = 25 KG) AK.113806  TR.44265",
+        "nombre": "CADENA GALVANIZADA",
         "medida": "1/2\"",
         "unidad": "METRO",
         "unidad2": "",
@@ -8207,7 +8196,7 @@
     },
     {
         "codigo": "1098",
-        "nombre": "CAJA COSMETICOS STK CPS17K",
+        "nombre": "CAJA COSMETICOS",
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
@@ -8218,7 +8207,7 @@
     },
     {
         "codigo": "7670",
-        "nombre": "CAJA COSMETIQUERA 14\" ROSA/MORADO   ST. 6239   TR. 25052",
+        "nombre": "CAJA COSMETIQUERA 14\" ROSA/MORADO",
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
@@ -8229,7 +8218,7 @@
     },
     {
         "codigo": "7708",
-        "nombre": "CAJA D/ PESCA 16\" C/ 3 BANDEJAS DESLIZABLES   TR.10539",
+        "nombre": "CAJA DE PESCA 16\" CON 3 BANDEJAS DESLIZABLES",
         "medida": "",
         "unidad": "PZ",
         "unidad2": "",
@@ -8483,7 +8472,7 @@
     {
         "codigo": "1339",
         "nombre": "CAJA DE REGISTRO  PVC      3 X 3\"    ARG. CAJA013",
-        "medida": "",
+        "medida": "3 X 3",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -8494,7 +8483,7 @@
     {
         "codigo": "1340",
         "nombre": "CAJA DE REGISTRO  PVC      4 X 4\"    ARG. CAJA019",
-        "medida": "",
+        "medida": "4 X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -8505,7 +8494,7 @@
     {
         "codigo": "1341",
         "nombre": "CAJA DE REGISTRO GAL       3 X 3\"    S/T 002171",
-        "medida": "",
+        "medida": "3 X 3",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -8516,7 +8505,7 @@
     {
         "codigo": "1342",
         "nombre": "CAJA DE REGISTRO GAL       4 X 4\"    S/T  45007",
-        "medida": "",
+        "medida": "4 X 4",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -8527,7 +8516,7 @@
     {
         "codigo": "1343",
         "nombre": "CAJA DE REGISTRO GAL       5 X 5\"    S/T",
-        "medida": "",
+        "medida": "5 X 5",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -8549,7 +8538,7 @@
     {
         "codigo": "8190",
         "nombre": "CAJA DE REGISTRO PVC 5X5",
-        "medida": "",
+        "medida": "5 X 5",
         "unidad": "PZ",
         "unidad2": "",
         "categoria": "OTROS",
@@ -38698,6 +38687,17 @@
         "informacion": ""
     },
     {
+        "codigo": "2485",
+        "nombre": "PINTURA  DIAMALUXE  4 LT",
+        "medida": "NAPOLITANO",
+        "unidad": "PIEZA",
+        "unidad2": "",
+        "categoria": "PINTURA",
+        "subcategoria": "PLASTICA ANTIHONGOS",
+        "imagen": "imagenes/2485.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "7211",
         "nombre": "PINTURA  DIAMALUXE 19 LT",
         "medida": "BLANCO",
@@ -39410,17 +39410,6 @@
         "categoria": "PINTURA",
         "subcategoria": "PLASTICA",
         "imagen": "imagenes/5713.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "2485",
-        "nombre": "PINTURA  DIAMALUXE  4 LT",
-        "medida": "NAPOLITANO",
-        "unidad": "PIEZA",
-        "unidad2": "",
-        "categoria": "PINTURA",
-        "subcategoria": "PLASTICA ANTIHONGOS",
-        "imagen": "imagenes/2485.jpg",
         "informacion": ""
     },
     {
@@ -41063,6 +41052,39 @@
         "informacion": ""
     },
     {
+        "codigo": "3979",
+        "nombre": "PINTURA SPRAY",
+        "medida": "FLAMINGO",
+        "unidad": "PZ",
+        "unidad2": "",
+        "categoria": "PINTURA",
+        "subcategoria": "SPRAY",
+        "imagen": "imagenes/3979.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "2775",
+        "nombre": "PINTURA SPRAY",
+        "medida": "NOGAL",
+        "unidad": "MTS",
+        "unidad2": "",
+        "categoria": "PINTURA",
+        "subcategoria": "SPRAY",
+        "imagen": "imagenes/2775.jpg",
+        "informacion": ""
+    },
+    {
+        "codigo": "4423",
+        "nombre": "PINTURA SPRAY",
+        "medida": "ROSA TAXI",
+        "unidad": "PIEZA",
+        "unidad2": "",
+        "categoria": "PINTURA",
+        "subcategoria": "SPRAY",
+        "imagen": "imagenes/4423.jpg",
+        "informacion": ""
+    },
+    {
         "codigo": "4925",
         "nombre": "PINTURA SPRAY ALTA TEMPERATURA",
         "medida": "ALUMINIO",
@@ -41082,17 +41104,6 @@
         "categoria": "PINTURA",
         "subcategoria": "SPRAY",
         "imagen": "imagenes/4926.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "3979",
-        "nombre": "PINTURA SPRAY",
-        "medida": "FLAMINGO",
-        "unidad": "PZ",
-        "unidad2": "",
-        "categoria": "PINTURA",
-        "subcategoria": "SPRAY",
-        "imagen": "imagenes/3979.jpg",
         "informacion": ""
     },
     {
@@ -41500,28 +41511,6 @@
         "categoria": "PINTURA",
         "subcategoria": "SPRAY",
         "imagen": "imagenes/4031.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "2775",
-        "nombre": "PINTURA SPRAY",
-        "medida": "NOGAL",
-        "unidad": "MTS",
-        "unidad2": "",
-        "categoria": "PINTURA",
-        "subcategoria": "SPRAY",
-        "imagen": "imagenes/2775.jpg",
-        "informacion": ""
-    },
-    {
-        "codigo": "4423",
-        "nombre": "PINTURA SPRAY",
-        "medida": "ROSA TAXI",
-        "unidad": "PIEZA",
-        "unidad2": "",
-        "categoria": "PINTURA",
-        "subcategoria": "SPRAY",
-        "imagen": "imagenes/4423.jpg",
         "informacion": ""
     },
     {
