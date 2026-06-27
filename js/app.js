@@ -656,23 +656,53 @@ function actualizarCarrito(){
             ${unidadTexto ? `<br>Unidad: ${unidadTexto}` : ''}
             ${medidaTexto ? `<br>Medida: ${medidaTexto}` : ''}
             <div class="controles">
-                <button onclick="cambiarCantidad('${item._key}',-1)">−</button>
+                <button class="btnMenos" data-key="${item._key}">−</button>
 
                 <input
                     type="number"
                     min="1"
                     value="${item.cantidad}"
-                    onchange="actualizarCantidad('${item._key}', this.value)"
                     class="cantidadInput"
+                    data-key="${item._key}"
                 >
 
-                <button onclick="cambiarCantidad('${item._key}',1)">+</button>
+                <button class="btnMas" data-key="${item._key}">+</button>
 
-                <button class="btnEliminar" onclick="eliminarProducto('${item._key}')">🗑️</button>
+                <button class="btnEliminar" data-key="${item._key}">🗑️</button>
             </div>
         `;
 
         lista.appendChild(div);
+
+        // Agregar event listeners usando data-key en lugar de onclick inline
+        const btnMenos = div.querySelector('.btnMenos');
+        const btnMas = div.querySelector('.btnMas');
+        const btnEliminar = div.querySelector('.btnEliminar');
+        const inputCantidad = div.querySelector('.cantidadInput');
+
+        if(btnMenos){
+            btnMenos.addEventListener('click', () => {
+                cambiarCantidad(item._key, -1);
+            });
+        }
+
+        if(btnMas){
+            btnMas.addEventListener('click', () => {
+                cambiarCantidad(item._key, 1);
+            });
+        }
+
+        if(inputCantidad){
+            inputCantidad.addEventListener('change', () => {
+                actualizarCantidad(item._key, inputCantidad.value);
+            });
+        }
+
+        if(btnEliminar){
+            btnEliminar.addEventListener('click', () => {
+                eliminarProducto(item._key);
+            });
+        }
 
     });
 
