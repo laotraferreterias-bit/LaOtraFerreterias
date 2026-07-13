@@ -238,6 +238,34 @@ function mostrarProductosPagina(){
     actualizarPaginacion();
 
 }
+function resolverRutasImagen(producto){
+
+    const rutaOriginal =
+        producto && producto.imagen
+            ? String(producto.imagen).trim()
+            : "";
+
+    if(!rutaOriginal){
+        return {
+            principal: "",
+            alternativa: ""
+        };
+    }
+
+    const rutaSinBarra = rutaOriginal.replace(/^\/+/, "");
+
+    const alternativa =
+        rutaSinBarra.startsWith("imagenes/")
+            ? rutaSinBarra.replace(/^imagenes\//, "imagenes2/")
+            : "";
+
+    return {
+        principal: rutaOriginal,
+        alternativa
+    };
+
+}
+
 // dibuja los productos en pantalla
 // cada tarjeta es una carta con su info y botoncito para agregar
 function mostrarProductos(lista){
@@ -274,17 +302,19 @@ function mostrarProductos(lista){
             ? producto.variantes[0].informacion
             : producto.informacion || '';
 
+        const { principal, alternativa } = resolverRutasImagen(producto);
+
         tarjeta.innerHTML = `
 
             ${
-                // si no hay imagen, mostramos un cartoncito de placeholder
-                producto.imagen ?
+                principal ?
 
                 `<img
-                    src="${producto.imagen}"
+                    src="${principal}"
                     loading="lazy"
                     alt="${producto.nombre}"
-                    onerror="this.outerHTML='<div class=sin-imagen>Sin imagen</div>'"
+                    data-fallback="${alternativa || ''}"
+                    onerror="this.onerror=null; const fallback=this.getAttribute('data-fallback'); if(fallback && this.getAttribute('src') !== fallback){ this.src=fallback; } else { this.outerHTML='<div class=sin-imagen>Sin imagen</div>'; }"
                 >`
 
                 :
@@ -527,7 +557,7 @@ function mostrarProductos(lista){
                     const medidaSel = opt ? opt.text : '';
                     boton.dataset.medida = medidaSel;
 
-                    // si la variante trae unidad, actualizar selector de unidad si existe
+                    // si la variante trae unidad, actualizar selector de unidad (SOLO SI EXISTE)
                     const selUnidad = tarjeta.querySelector('.selectorUnidad');
                     if(selUnidad && variante && variante.unidad){
                         selUnidad.value = variante.unidad;
