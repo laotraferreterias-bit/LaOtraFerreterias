@@ -265,7 +265,27 @@ function resolverRutasImagen(producto){
     };
 
 }
+function obtenerInformacion(item){
 
+    if(!item) return "";
+
+    return [
+        item.informacion,
+        item.complemento0,
+        item.complemento1,
+        item.complemento2,
+        item.complemento3,
+        item.complemento4
+    ]
+    .filter(valor =>
+        valor !== undefined &&
+        valor !== null &&
+        String(valor).trim() !== ""
+    )
+    .map(valor => String(valor).trim())
+    .join("\n");
+
+}
 // dibuja los productos en pantalla
 // cada tarjeta es una carta con su info y botoncito para agregar
 function mostrarProductos(lista){
@@ -286,21 +306,15 @@ function mostrarProductos(lista){
 
         tarjeta.className = "card";
 
-        const tieneInfo =
-            (producto.informacion &&
-             String(producto.informacion).trim() !== "") ||
-            (tieneVariantes &&
-             producto.variantes.some(v =>
-                v.informacion && String(v.informacion).trim() !== ""
-             ));
+        const infoInicial = tieneVariantes
+            ? obtenerInformacion(producto.variantes[0])
+            : obtenerInformacion(producto);
 
-        const infoInicial =
-            tieneVariantes &&
-            producto.variantes[0] &&
-            producto.variantes[0].informacion &&
-            String(producto.variantes[0].informacion).trim() !== ""
-            ? producto.variantes[0].informacion
-            : producto.informacion || '';
+        const tieneInfo =
+            Boolean(infoInicial) ||
+            (tieneVariantes && producto.variantes.some(v =>
+                obtenerInformacion(v) !== ""
+            ));
 
         const { principal, alternativa } = resolverRutasImagen(producto);
 
@@ -427,7 +441,8 @@ function mostrarProductos(lista){
                     ? `
                     <button
                         class="btnInfo"
-                        data-info="${encodeURIComponent(infoInicial)}">
+                        data-info="${encodeURIComponent(infoInicial)}"
+                    >
                         Información
                     </button>
                     `
@@ -570,10 +585,9 @@ function mostrarProductos(lista){
 
                     const btnInfo = tarjeta.querySelector('.btnInfo');
                     if(btnInfo){
-                        const nuevaInfo =
-                            variante && variante.informacion && String(variante.informacion).trim() !== ""
-                            ? variante.informacion
-                            : producto.informacion || '';
+                        const nuevaInfo = variante
+                            ? obtenerInformacion(variante)
+                            : obtenerInformacion(producto);
 
                         if(String(nuevaInfo).trim() !== ""){
                             btnInfo.dataset.info = encodeURIComponent(nuevaInfo);
