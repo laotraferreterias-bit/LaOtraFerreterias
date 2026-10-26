@@ -1,4 +1,4 @@
-Esta es una pagina web dedicada para una ferreteria. Al esta aqui, nosotros ya le estamos dando funcionamiento.
+Esta es una pagina web dedicada para una ferreteria. Al estar aqui, nosotros ya le estamos dando funcionamiento.
 La pagina toma los productos de un archivo .json y los lee, cada producto debe tener unidad, unidad 2, medida, nombre, codigo, imagen, categoria y subcategoria.
 Crea una tarjeta de texto donde se muestra la informacion del producto, incluyendo las imagenes.
 Categoriza los productos y les agrega subcategoria siempre y cuando tengan la misma categoria dentro de la informacion de cada producto.
